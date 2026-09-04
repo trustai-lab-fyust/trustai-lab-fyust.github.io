@@ -1,0 +1,325 @@
+# 论文。id 供 research.yaml 引用；year 用于排序；type 为 conference 或 journal；rank 可空。
+# 来源：三位教师学院主页（2026-09-04）。links 可填 pdf / code / arxiv 等。
+- id: sp2026
+  year: 2026
+  authors: Chunmian Wang, Junzhou Luo, Zhen Ling, Yue Zhang, Shan Wang, Ming Yang, Guangchi Liu, Xinwen Fu
+  title: "Descriptors of Exposure: Undermining Tor Anonymity through Exploiting DESCRIPTOR FLOOD"
+  venue: IEEE S&P 2026
+  venue_full: 47th IEEE Symposium on Security and Privacy
+  type: conference
+  rank: CCF-A
+  direction: anon-net
+  status: accepted
+  links: []
+- id: infocom2026
+  year: 2026
+  authors: Chunmian Wang, Xiaodan Gu, Ming Yang, Qi Chen, Zhou Xu
+  title: "Duplicate-Node Attack: Identifying Guards to Degrade and Triangulate Onion Services"
+  venue: IEEE INFOCOM 2026
+  venue_full: 45th IEEE International Conference on Computer Communications
+  type: conference
+  rank: CCF-A
+  direction: anon-net
+  status: accepted
+  links: []
+- id: tnse2026
+  year: 2026
+  authors: Qi Chen, Ming Yang, Zhen Ling, Xiaodan Gu, Chunmian Wang, Yixuan Yao
+  title: "Hiding Communication beyond Anonymity: A Covert Information Transmission Framework over Anonymous Networks"
+  venue: IEEE TNSE 2026
+  venue_full: IEEE Transactions on Network Science and Engineering
+  type: journal
+  rank: JCR Q1
+  direction: anon-net
+  status: accepted
+  links: []
+- id: cscwd2026
+  year: 2026
+  authors: Zhouguo Chen, Chunmian Wang, Leran Ren, Ming Yang
+  title: "Seeing Through .onion: Multimodal Information Extraction and Category Discovery in Tor Markets"
+  venue: CSCWD 2026
+  venue_full: 28th International Conference on Computer Supported Cooperative Work in Design
+  type: conference
+  rank: CCF-C
+  direction: anon-net
+  status: accepted
+  links: []
+- id: tacl2026
+  year: 2026
+  authors: Guangsheng Bao, Lihua Rong, Yanbin Zhao, Xiao Yu, Qiji Zhou, Yue Zhang
+  title: "Triospect: A Three-Dimensional Framework for Robust Statistical AI-Generated Text Detection Against Diverse Attacks"
+  venue: TACL 2026
+  venue_full: Transactions of the Association for Computational Linguistics
+  type: journal
+  rank: CCF-B
+  direction: trustworthy-llm
+  status: accepted
+  links: []
+- id: taslp2026
+  year: 2026
+  authors: Zhizhang Fu, Guangsheng Bao, Hongbo Zhang, Chenkai Hu, Yue Zhang
+  title: "Correlation or Causation: Analyzing the Causal Structures of LLM and LRM Reasoning Process"
+  venue: IEEE/ACM TASLP 2026
+  venue_full: IEEE/ACM Transactions on Audio, Speech and Language Processing
+  type: journal
+  rank: CCF-B
+  direction: trustworthy-llm
+  status: accepted
+  links: []
+- id: www2025
+  year: 2025
+  authors: Yixuan Yao, Ming Yang, Zixia Liu, Kai Dong, Xiaodan Gu, Chunmian Wang
+  title: "Do Not Trust What They Tell: Exposing Malicious Accomplices in Tor via Anomalous Circuit Detection"
+  venue: WWW 2025
+  venue_full: 34th ACM Web Conference
+  type: conference
+  rank: CCF-A
+  direction: anon-net
+  links: []
+- id: iclr2025
+  year: 2025
+  authors: Guangsheng Bao, Yanbin Zhao, Juncai He, Yue Zhang
+  title: "Glimpse: Enabling White-Box Methods to Use Proprietary Models for Zero-Shot LLM-Generated Text Detection"
+  venue: ICLR 2025
+  venue_full: 13th International Conference on Learning Representations
+  type: conference
+  rank: CCF-A
+  direction: trustworthy-llm
+  links: []
+- id: emnlp2025
+  year: 2025
+  authors: Hongbo Zhang, Han Cui, Guangsheng Bao, Linyi Yang, Jun Wang, Yue Zhang
+  title: "Direct Value Optimization: Improving Chain-of-Thought Reasoning in LLMs with Refined Values"
+  venue: EMNLP 2025
+  venue_full: 2025 Conference on Empirical Methods in Natural Language Processing
+  type: conference
+  rank: CCF-B
+  direction: trustworthy-llm
+  links: []
+- id: coling2025
+  year: 2025
+  authors: Guangsheng Bao, Hongbo Zhang, Linyi Yang, Cunxiang Wang, Yue Zhang
+  title: "How Likely Do LLMs with CoT Mimic Human Reasoning?"
+  venue: COLING 2025
+  venue_full: 31st International Conference on Computational Linguistics
+  type: conference
+  rank: CCF-B
+  direction: trustworthy-llm
+  links: []
+- id: tpami2025
+  year: 2025
+  authors: W. Mao, C. Hou, T. Zhang, X. Lin, K. Tang, H. Lv
+  title: "Parse Trees Guided LLM Prompt Compression"
+  venue: IEEE TPAMI 2025
+  venue_full: IEEE Transactions on Pattern Analysis and Machine Intelligence
+  type: journal
+  rank: CCF-A
+  direction: llm-agent-vertical
+  links: []
+- id: kbs2025a
+  year: 2025
+  authors: X. Lin, T. Zhang, C. Hou, J. Wang, J. Xue, H. Lv
+  title: "Node Importance Estimation Leveraging LLMs for Semantic Augmentation in Knowledge Graphs"
+  venue: Knowledge-Based Systems 2025
+  venue_full: Knowledge-Based Systems
+  type: journal
+  rank: CCF-C
+  direction: llm-agent-vertical
+  links: []
+- id: kbs2025b
+  year: 2025
+  authors: J. Song, Y. Shen, C. Hou, P. Wang, J. Wang, K. Tang, H. Lv
+  title: "FedAGHN: Personalized Federated Learning with Attentive Graph HyperNetworks"
+  venue: Knowledge-Based Systems 2025
+  venue_full: Knowledge-Based Systems
+  type: journal
+  rank: CCF-C
+  direction: llm-agent-vertical
+  links: []
+- id: aaai2025
+  year: 2025
+  authors: H. Liang, G. Xie, C. Hou, B. Wang, C. Gao, J. Wang
+  title: "Look Inside for More: Internal Spatial Modality Perception for 3D Anomaly Detection"
+  venue: AAAI 2025
+  venue_full: 39th AAAI Conference on Artificial Intelligence
+  type: conference
+  rank: CCF-A
+  direction: llm-agent-vertical
+  links: []
+- id: jtcm2025
+  year: 2025
+  authors: C. Hou, Y. Gao, X. Lin, J. Wu, N. Li, H. Lv, C. Chu
+  title: "A Review of Recent Artificial Intelligence for Traditional Medicine"
+  venue: J. Traditional and Complementary Medicine 2025
+  venue_full: Journal of Traditional and Complementary Medicine (cover paper)
+  type: journal
+  rank: ""
+  direction: llm-agent-vertical
+  links: []
+- id: tr2025
+  year: 2025
+  authors: C. Hou, Y. Song, J. Song, C. Chu, X. Fei, J. Li, H. Lv
+  title: "KGC-Explainer: Towards Explainable Knowledge Graph Completion"
+  venue: IEEE Transactions on Reliability
+  venue_full: IEEE Transactions on Reliability
+  type: journal
+  rank: ""
+  direction: llm-agent-vertical
+  status: accepted
+  links: []
+- id: tnnls2024
+  year: 2024
+  authors: T. Zhang, C. Hou, R. Jiang, X. Zhang, C. Zhou, K. Tang, H. Lv
+  title: "Label Informed Contrastive Pretraining for Node Importance Estimation on Knowledge Graphs"
+  venue: IEEE TNNLS 2024
+  venue_full: IEEE Transactions on Neural Networks and Learning Systems
+  type: journal
+  rank: CCF-B
+  direction: llm-agent-vertical
+  links: []
+- id: iclr2024
+  year: 2024
+  authors: Guangsheng Bao, Yanbin Zhao, Zhiyang Teng, Linyi Yang, Yue Zhang
+  title: "Fast-DetectGPT: Efficient Zero-Shot Detection of Machine-Generated Text via Conditional Probability Curvature"
+  venue: ICLR 2024
+  venue_full: 12th International Conference on Learning Representations
+  type: conference
+  rank: CCF-A
+  direction: trustworthy-llm
+  links:
+    - label: arXiv
+      url: https://arxiv.org/abs/2310.05130
+    - label: Code
+      url: https://github.com/baoguangsheng/fast-detect-gpt
+- id: infocom2023
+  year: 2023
+  authors: Chunmian Wang, Junzhou Luo, Zhen Ling, Lan Luo, Xinwen Fu
+  title: "A Comprehensive and Long-term Evaluation of Tor V3 Onion Services"
+  venue: IEEE INFOCOM 2023
+  venue_full: 42nd IEEE International Conference on Computer Communications
+  type: conference
+  rank: CCF-A
+  direction: anon-net
+  links: []
+- id: cscwd2023
+  year: 2023
+  authors: Chunmian Wang, Junzhou Luo, Zhen Ling, Ming Yang, Xiaodan Gu, Yu Yao
+  title: "TorDNS: A Novel Correlated Onion Address Generation Approach and Application"
+  venue: CSCWD 2023
+  venue_full: 26th International Conference on Computer Supported Cooperative Work in Design
+  type: conference
+  rank: CCF-C
+  direction: anon-net
+  links: []
+- id: acl2023
+  year: 2023
+  authors: Guangsheng Bao, Zhiyang Teng, Yue Zhang
+  title: "Target-Side Augmentation for Document-Level Machine Translation"
+  venue: ACL 2023
+  venue_full: 61st Annual Meeting of the Association for Computational Linguistics
+  type: conference
+  rank: CCF-A
+  direction: trustworthy-llm
+  links: []
+- id: emnlp2023
+  year: 2023
+  authors: Guangsheng Bao, Zebin Ou, Yue Zhang
+  title: "GEMINI: Controlling The Sentence-Level Summary Style in Abstractive Text Summarization"
+  venue: EMNLP 2023
+  venue_full: 2023 Conference on Empirical Methods in Natural Language Processing
+  type: conference
+  rank: CCF-B
+  direction: trustworthy-llm
+  links: []
+- id: emnlp2023f
+  year: 2023
+  authors: Guangsheng Bao, Zhiyang Teng, Hao Zhou, Jianhao Yan, Yue Zhang
+  title: "Non-Autoregressive Document-Level Machine Translation"
+  venue: EMNLP 2023 Findings
+  venue_full: Findings of EMNLP 2023
+  type: conference
+  rank: CCF-B
+  direction: trustworthy-llm
+  links: []
+- id: taslp2023
+  year: 2023
+  authors: Guangsheng Bao, Yue Zhang
+  title: "A General Contextualized Rewriting Framework for Text Summarization"
+  venue: IEEE/ACM TASLP 2023
+  venue_full: IEEE/ACM Transactions on Audio, Speech and Language Processing
+  type: journal
+  rank: CCF-B
+  direction: trustworthy-llm
+  links: []
+- id: mee2023
+  year: 2023
+  authors: C. Hou, X. Lin, H. Huang, S. Xu, J. Fan, Y. Shi, H. Lv
+  title: "Fossil Image Identification using Deep Learning Ensembles of Data Augmented Multiviews"
+  venue: Methods in Ecology and Evolution 2023
+  venue_full: Methods in Ecology and Evolution
+  type: journal
+  rank: ""
+  direction: llm-agent-vertical
+  links: []
+- id: infocom2022
+  year: 2022
+  authors: Chunmian Wang, Zhen Ling, Wenjia Wu, Qi Chen, Ming Yang, Xinwen Fu
+  title: "Large-scale Evaluation of Malicious Tor Hidden Service Directory Discovery"
+  venue: IEEE INFOCOM 2022
+  venue_full: 41st IEEE International Conference on Computer Communications
+  type: conference
+  rank: CCF-A
+  direction: anon-net
+  links: []
+- id: tkde2022
+  year: 2022
+  authors: C. Hou, H. Zhang, S. He, K. Tang
+  title: "GloDyNE: Global Topology Preserving Dynamic Network Embedding"
+  venue: IEEE TKDE 2022
+  venue_full: IEEE Transactions on Knowledge and Data Engineering
+  type: journal
+  rank: CCF-A
+  direction: llm-agent-vertical
+  links:
+    - label: Code
+      url: https://github.com/houchengbin/GloDyNE
+- id: ijcai2021
+  year: 2021
+  authors: C. Hou, K. Tang
+  title: "Towards Robust Dynamic Network Embedding"
+  venue: IJCAI 2021
+  venue_full: 30th International Joint Conference on Artificial Intelligence
+  type: conference
+  rank: CCF-A
+  direction: llm-agent-vertical
+  links: []
+- id: acl2021
+  year: 2021
+  authors: Guangsheng Bao, Yue Zhang, Zhiyang Teng, Boxing Chen, Weihua Luo
+  title: "G-Transformer for Document-Level Machine Translation"
+  venue: ACL 2021 (Oral)
+  venue_full: 59th Annual Meeting of the Association for Computational Linguistics
+  type: conference
+  rank: CCF-A
+  direction: trustworthy-llm
+  links: []
+- id: aaai2021
+  year: 2021
+  authors: Guangsheng Bao, Yue Zhang
+  title: "Contextualized Rewriting for Text Summarization"
+  venue: AAAI 2021
+  venue_full: 35th AAAI Conference on Artificial Intelligence
+  type: conference
+  rank: CCF-A
+  direction: trustworthy-llm
+  links: []
+- id: neucom2020
+  year: 2020
+  authors: C. Hou, S. He, K. Tang
+  title: "RoSANE: Robust and Scalable Attributed Network Embedding for Sparse Networks"
+  venue: Neurocomputing 2020
+  venue_full: Neurocomputing
+  type: journal
+  rank: CCF-C
+  direction: llm-agent-vertical
+  links: []

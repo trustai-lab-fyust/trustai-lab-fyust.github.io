@@ -1,0 +1,42 @@
+# 新闻动态。date 写 YYYY-MM 或 YYYY-MM-DD；只知道年份时写 "YYYY"。按 date 倒序显示。
+# 文本里有冒号时，用下面这种 >- 写法最省心。
+- date: 2026-09
+  zh: >-
+    实验室主页上线。
+  en: >-
+    Lab website launched.
+- date: 2026-07
+  zh: >-
+    鲍光胜加入实验室，任助理教授，负责安全可信大模型方向。
+  en: >-
+    Guangsheng Bao joins the lab as Assistant Professor, leading the safe and trustworthy LLM line.
+- date: 2026-02
+  zh: >-
+    王春棉加入实验室，任助理教授，负责匿名网络与协议安全方向。
+  en: >-
+    Chunmian Wang joins the lab as Assistant Professor, leading the anonymous network and protocol security line.
+- date: "2026"
+  zh: >-
+    论文 “Descriptors of Exposure: Undermining Tor Anonymity through Exploiting DESCRIPTOR FLOOD” 被 IEEE S&P 2026 录用。
+  en: >-
+    “Descriptors of Exposure: Undermining Tor Anonymity through Exploiting DESCRIPTOR FLOOD” accepted at IEEE S&P 2026.
+- date: "2026"
+  zh: >-
+    论文 “Duplicate-Node Attack: Identifying Guards to Degrade and Triangulate Onion Services” 被 IEEE INFOCOM 2026 录用。
+  en: >-
+    “Duplicate-Node Attack: Identifying Guards to Degrade and Triangulate Onion Services” accepted at IEEE INFOCOM 2026.
+- date: "2026"
+  zh: >-
+    论文 “Triospect: A Three-Dimensional Framework for Robust Statistical AI-Generated Text Detection Against Diverse Attacks” 被 TACL 录用。
+  en: >-
+    “Triospect: A Three-Dimensional Framework for Robust Statistical AI-Generated Text Detection Against Diverse Attacks” accepted at TACL.
+- date: "2025"
+  zh: >-
+    论文 “Parse Trees Guided LLM Prompt Compression” 发表于 IEEE TPAMI。
+  en: >-
+    “Parse Trees Guided LLM Prompt Compression” published in IEEE TPAMI.
+- date: "2025"
+  zh: >-
+    论文 “Glimpse: Enabling White-Box Methods to Use Proprietary Models for Zero-Shot LLM-Generated Text Detection” 被 ICLR 2025 录用。
+  en: >-
+    “Glimpse: Enabling White-Box Methods to Use Proprietary Models for Zero-Shot LLM-Generated Text Detection” accepted at ICLR 2025.

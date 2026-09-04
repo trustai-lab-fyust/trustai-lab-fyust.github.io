@@ -1,0 +1,87 @@
+{% extends "base.html" %}
+{% block title %}{{ ui.home }}{% endblock %}
+{% block content %}
+<section class="hero">
+  <div class="container">
+    <div class="hero-kicker">{{ t(site, 'affiliation') }}</div>
+    <h1 class="hero-title">{{ t(site, 'name') }}</h1>
+    {% if lang == 'zh' %}<div class="hero-en">{{ site.name_en }} · {{ site.short }}</div>{% else %}<div class="hero-en">{{ site.short }}</div>{% endif %}
+    <p class="hero-tagline">{{ t(site, 'tagline') }}</p>
+    <div class="hero-actions">
+      <a class="btn btn-primary" href="research.html">{{ ui.research_areas }}</a>
+      <a class="btn btn-ghost" href="join.html">{{ ui.join_cta }}</a>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <p class="lead">{{ t(site, 'intro') }}</p>
+  </div>
+</section>
+
+<section class="section section-alt">
+  <div class="container">
+    <h2 class="section-title">{{ ui.research_areas }}</h2>
+    <div class="cards cards-3">
+      {% for a in research %}
+      <a class="card card-link" href="research.html#{{ a.id }}">
+        <div class="card-index">0{{ loop.index }}</div>
+        <h3 class="card-title">{{ t(a, 'title') }}</h3>
+        <p class="card-text">{{ t(a, 'summary') }}</p>
+        <div class="card-foot">{{ ui.lead_by }}{{ ui.colon }}{{ t(a._lead, 'name') }}</div>
+      </a>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <h2 class="section-title">{{ tiers[0][lang] }}</h2>
+    <div class="cards cards-3">
+      {% for p in people_by_tier['faculty'] %}
+      <div class="card person-mini">
+        <img class="person-img" src="{{ rel }}{{ p._img }}" alt="{{ t(p, 'name') }}" width="160" height="160">
+        <div class="person-name">{{ t(p, 'name') }}</div>
+        <div class="person-title">{{ t(p, 'title') }}</div>
+        {% set area = (research | selectattr('id', 'equalto', p.direction) | list | first) %}
+        {% if area %}<div class="person-area">{{ t(area, 'title') }}</div>{% endif %}
+        <div class="person-links"><a href="people.html#{{ p.id }}">{{ ui.more }}</a></div>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+<section class="section section-alt">
+  <div class="container two-col">
+    <div>
+      <h2 class="section-title">{{ ui.selected_pubs }}</h2>
+      <ul class="pub-list">
+        {% for p in selected_pubs %}{% include "_pub.html" %}{% endfor %}
+      </ul>
+      <a class="more-link" href="publications.html">{{ ui.all_pubs }} →</a>
+    </div>
+    <div>
+      <h2 class="section-title">{{ ui.recent_news }}</h2>
+      <ul class="news-list">
+        {% for n in recent_news %}
+        <li class="news-item"><span class="news-date">{{ n.date }}</span><span class="news-text">{{ t(n, '') if false else (n.zh if lang == 'zh' else n.en) }}</span></li>
+        {% endfor %}
+      </ul>
+      {% if lang == 'zh' %}<a class="more-link" href="news.html">{{ ui.all_news }} →</a>{% endif %}
+    </div>
+  </div>
+</section>
+
+<section class="section cta-band">
+  <div class="container cta-inner">
+    <div>
+      <h2 class="cta-title">{{ ui.join_cta }}</h2>
+      <p class="cta-text">{{ ui.join_lead }}</p>
+    </div>
+    <a class="btn btn-light" href="join.html">{{ ui.more }}</a>
+  </div>
+</section>
+{% endblock %}

@@ -1,0 +1,26 @@
+{% extends "base.html" %}
+{% block title %}{{ ui.research_areas }}{% endblock %}
+{% block content %}
+<section class="page-head"><div class="container"><h1>{{ ui.research_areas }}</h1></div></section>
+<section class="section">
+  <div class="container">
+    {% for a in research %}
+    <article class="area" id="{{ a.id }}">
+      <div class="area-index">0{{ loop.index }}</div>
+      <div class="area-body">
+        <h2 class="area-title">{{ t(a, 'title') }}</h2>
+        <div class="area-lead">{{ ui.lead_by }}{{ ui.colon }}<a href="people.html#{{ a._lead.id }}">{{ t(a._lead, 'name') }}</a></div>
+        <p class="area-text">{{ t(a, 'summary') }}</p>
+        <div class="tags">{% for k in t(a, 'keywords') %}<span class="tag tag-soft">{{ k }}</span>{% endfor %}</div>
+        {% if a._pubs %}
+        <h3 class="area-sub">{{ ui.highlights }}</h3>
+        <ul class="pub-list pub-list-compact">
+          {% for p in a._pubs %}{% include "_pub.html" %}{% endfor %}
+        </ul>
+        {% endif %}
+      </div>
+    </article>
+    {% endfor %}
+  </div>
+</section>
+{% endblock %}

@@ -1,0 +1,32 @@
+{% extends "base.html" %}
+{% block title %}{{ nav | selectattr('id', 'equalto', 'people') | map(attribute=lang) | first }}{% endblock %}
+{% block content %}
+<section class="page-head"><div class="container"><h1>{{ nav | selectattr('id', 'equalto', 'people') | map(attribute=lang) | first }}</h1></div></section>
+<section class="section">
+  <div class="container">
+    {% for tier in tiers %}
+    {% set members = people_by_tier[tier.id] %}
+    {% if members or tier.id != 'alumni' %}
+    <h2 class="tier-title" id="tier-{{ tier.id }}">{{ tier[lang] }}</h2>
+    {% if members %}
+      {% if tier.id == 'faculty' %}
+      <div class="people-list">
+        {% for p in members %}<div id="{{ p.id }}">{% with size='lg' %}{% include "_person.html" %}{% endwith %}</div>{% endfor %}
+      </div>
+      {% else %}
+      <div class="people-grid">
+        {% for p in members %}<div id="{{ p.id }}">{% with size='sm' %}{% include "_person.html" %}{% endwith %}</div>{% endfor %}
+      </div>
+      {% endif %}
+    {% else %}
+      <a class="recruit-card" href="join.html">
+        <span class="recruit-badge">{{ ui.recruiting }}</span>
+        <span class="recruit-text">{{ ui.recruiting_note }}</span>
+        <span class="recruit-arrow">→</span>
+      </a>
+    {% endif %}
+    {% endif %}
+    {% endfor %}
+  </div>
+</section>
+{% endblock %}

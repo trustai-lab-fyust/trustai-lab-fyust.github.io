@@ -1,0 +1,90 @@
+# 成员。tier 取值：faculty / phd / master / intern / alumni（见 site.yaml 的 tiers）。
+# 照片放 assets/img/people/<id>.jpg 并填 photo 字段；不填则显示姓名首字占位图。
+# 学生条目示例（复制后去掉前面的 # 号）：
+# - id: zhangsan
+#   tier: phd
+#   name_zh: 张三
+#   name_en: San Zhang
+#   since: 2026            # 入学年份
+#   advisor: wang          # 导师 id
+#   direction: anon-net    # 方向 id
+#   email: zhangsan@example.com
+#   homepage: ""
+#   photo: ""
+#   bio_zh: 一句话介绍。
+#   bio_en: One-line bio.
+# 校友条目加 left: 2029 和 destination_zh / destination_en（去向）。
+
+- id: hou
+  tier: faculty
+  name_zh: 侯诚彬
+  name_en: Chengbin Hou
+  title_zh: 助理教授，院长助理
+  title_en: Assistant Professor; Assistant to the Dean
+  direction: llm-agent-vertical
+  email: houcb@fyust.edu.cn
+  homepage: https://cs.fyust.edu.cn/szdw/jsdw/hcb.htm
+  links:
+    - label: GitHub
+      url: https://github.com/houchengbin
+    - label: ORCID
+      url: https://orcid.org/0000-0001-6648-793X
+    - label: Google Scholar
+      url: https://scholar.google.com/citations?user=gTjReaQAAAAJ
+  photo: hou.jpg
+  bio_zh: >-
+    2022 年获英国伯明翰大学计算机科学博士学位，曾在华为、腾讯 AI Lab 实习与工作，2024 年 2 月加入福耀科技大学。
+    主要研究大模型与智能体、深度学习及 AI 技术在垂直领域应用，在 TPAMI、TNNLS、TKDE、AAAI、IJCAI 等发表论文二十余篇，
+    主持国家自然科学基金青年项目、福建省自然科学基金项目等。获福建省高层次人才 C 类、河南省医学科技一等奖、IET Prize。
+  bio_en: >-
+    PhD in Computer Science from the University of Birmingham (2022); previously with Huawei and Tencent AI Lab;
+    joined FYUST in February 2024. Works on LLMs and agents, deep learning, and AI for vertical domains, with 20+
+    papers in TPAMI, TNNLS, TKDE, AAAI and IJCAI. PI of an NSFC Young Scientists project and a Fujian NSF project.
+
+- id: wang
+  tier: faculty
+  name_zh: 王春棉
+  name_en: Chunmian Wang
+  title_zh: 助理教授
+  title_en: Assistant Professor
+  direction: anon-net
+  email: chunmianwang@fyust.edu.cn
+  homepage: https://cs.fyust.edu.cn/szdw/jsdw/wcm.htm
+  links: []
+  photo: wang.jpg
+  bio_zh: >-
+    博士毕业于东南大学计算机科学与工程学院，2026 年 2 月加入福耀科技大学。主要研究匿名网络协议与流量分析、
+    漏洞挖掘及暗网治理，发现的安全漏洞获 Tor 官方认可、收录 CVE 并获 Bug Bounty 奖励，在 IEEE S&P、INFOCOM、WWW、TNSE
+    等发表论文 8 篇，参与 10 余项面向国防与公共安全部门的科研任务。
+  bio_en: >-
+    PhD from the School of Computer Science and Engineering, Southeast University; joined FYUST in February 2026.
+    Works on anonymous network protocols and traffic analysis, vulnerability discovery and dark web governance.
+    Vulnerabilities acknowledged by the Tor Project with CVE IDs and a bug bounty; papers in IEEE S&P, INFOCOM, WWW and TNSE.
+
+- id: bao
+  tier: faculty
+  name_zh: 鲍光胜
+  name_en: Guangsheng Bao
+  title_zh: 助理教授
+  title_en: Assistant Professor
+  direction: trustworthy-llm
+  email: baoguangsheng@fyust.edu.cn
+  homepage: https://baoguangsheng.github.io/
+  links:
+    - label: GitHub
+      url: https://github.com/baoguangsheng
+    - label: Google Scholar
+      url: https://scholar.google.com/citations?user=cxPJx2kAAAAJ
+    - label: 学院主页
+      label_en: Faculty page
+      url: https://cs.fyust.edu.cn/szdw/jsdw/bgs.htm
+  photo: bao.jpg
+  bio_zh: >-
+    浙江大学计算机科学与技术博士（西湖大学联合培养），曾任职微软（中国）亚洲工程院、阿里巴巴数据科学研究院，
+    2026 年 7 月加入福耀科技大学。研究聚焦安全可信大模型，包括 AIGC 溯源检测、大模型可靠推理、安全可信智能体，
+    在 ACL、ICLR、TACL 等发表论文二十余篇。代表工作 Fast-DetectGPT（ICLR 2024）获《麻省理工科技评论》报道并商业化落地。
+  bio_en: >-
+    PhD from Zhejiang University (jointly trained at Westlake University); formerly at Microsoft (China) and Alibaba;
+    joined FYUST in July 2026. Works on safe and trustworthy LLMs: AIGC detection and attribution, reliable LLM
+    reasoning and safe agents, with 20+ papers in ACL, ICLR and TACL. Fast-DetectGPT (ICLR 2024) was covered by
+    MIT Technology Review and is deployed commercially.

@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+{% block title %}{{ ui.recent_news }}{% endblock %}
+{% block content %}
+<section class="page-head"><div class="container"><h1>{{ nav | selectattr('id', 'equalto', 'news') | map(attribute=lang) | first }}</h1></div></section>
+<section class="section">
+  <div class="container">
+    <ul class="news-list news-list-page">
+      {% for n in news %}
+      <li class="news-item" data-date="{{ n.date }}"><span class="news-date">{{ n.date }}</span><span class="news-text">{{ n.zh if lang == 'zh' else n.en }}</span></li>
+      {% endfor %}
+    </ul>
+  </div>
+</section>
+{% endblock %}

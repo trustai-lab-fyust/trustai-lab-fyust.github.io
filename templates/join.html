@@ -1,0 +1,31 @@
+{% extends "base.html" %}
+{% block title %}{{ ui.join_cta }}{% endblock %}
+{% block content %}
+<section class="page-head"><div class="container"><h1>{{ ui.join_cta }}</h1></div></section>
+<section class="section">
+  <div class="container">
+    <p class="lead">{{ t(join, 'lead') }}</p>
+    <ul class="offer-list">
+      {% for o in t(join, 'offers') %}<li>{{ o }}</li>{% endfor %}
+    </ul>
+    {% for s in join.sections %}
+    <article class="join-section" id="{{ s.id }}">
+      <h2 class="join-title">{{ t(s, 'title') }}</h2>
+      <ul class="join-body">
+        {% for line in t(s, 'body') %}<li>{{ line }}</li>{% endfor %}
+      </ul>
+    </article>
+    {% endfor %}
+    <div class="contact-box">
+      <p>{{ t(join, 'contact') }}</p>
+      <ul class="contact-list">
+        {% for p in people_by_tier['faculty'] %}
+        {% set area = (research | selectattr('id', 'equalto', p.direction) | list | first) %}
+        <li><strong>{{ t(p, 'name') }}</strong>{% if area %} · {{ t(area, 'title') }}{% endif %} · <a href="mailto:{{ p.email }}">{{ p.email }}</a></li>
+        {% endfor %}
+        <li><strong>{{ ui.contact }}</strong> · <a href="mailto:{{ site.contact_email }}">{{ site.contact_email }}</a></li>
+      </ul>
+    </div>
+  </div>
+</section>
+{% endblock %}

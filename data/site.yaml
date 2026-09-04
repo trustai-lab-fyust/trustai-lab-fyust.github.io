@@ -1,0 +1,128 @@
+# 站点基本信息。zh = 中文，en = 英文。改完运行 python3 build.py 重新生成 dist/。
+name_zh: 安全可信智能联合实验室
+name_en: Joint Laboratory of Trustworthy and Secure Intelligence
+short: TrustAI Lab
+affiliation_zh: 福耀科技大学 计算与人工智能学院
+affiliation_en: School of Computing and Artificial Intelligence, Fuyao University of Science and Technology
+affiliation_url: https://cs.fyust.edu.cn/
+
+tagline_zh: 面向大模型时代的安全与可信
+tagline_en: Security and trust for the era of large models
+
+# 首页一段话
+intro_zh: >-
+  安全可信智能联合实验室由福耀科技大学计算与人工智能学院三位教师联合组建，围绕匿名网络与协议安全、
+  安全可信大模型、大模型智能体与垂直领域可信 AI 三个方向开展研究。三个方向在“可信大模型与智能体”上交汇：
+  既研究网络与系统层面的攻击与防御，也研究大模型自身的检测、推理可靠性与智能体安全，并把方法落到医疗、
+  工程和公共安全等真实场景。
+intro_en: >-
+  TrustAI Lab is a joint laboratory founded by three faculty members of the School of Computing and
+  Artificial Intelligence at Fuyao University of Science and Technology. We work on anonymous networks
+  and protocol security, safe and trustworthy large language models, and LLM agents with reliable AI for
+  vertical domains. The three lines meet at trustworthy LLMs and agents: attacks and defenses at the network
+  and system level, detection and reliable reasoning for the models themselves, and deployment in
+  healthcare, engineering and public-safety settings.
+
+address_zh: 福建省福州高新技术产业开发区智慧大道 104 号，福耀科技大学计算与人工智能学院，邮编 350109
+address_en: School of Computing and AI, Fuyao University of Science and Technology, 104 Zhihui Avenue, Fuzhou High-tech Zone, Fuzhou, Fujian 350109, China
+contact_email: chunmianwang@fyust.edu.cn
+github: ""          # 建好 GitHub 组织后填，例如 https://github.com/trustai-lab-fyust
+
+# 成员层级，按页面显示顺序
+tiers:
+  - id: faculty
+    zh: 教师
+    en: Faculty
+  - id: phd
+    zh: 博士生
+    en: PhD Students
+  - id: master
+    zh: 硕士生
+    en: Master's Students
+  - id: intern
+    zh: 本科生与实习生
+    en: Undergraduates & Interns
+  - id: alumni
+    zh: 校友
+    en: Alumni
+
+# 导航。英文简版没有 news 页。
+nav:
+  - id: research
+    file: research.html
+    zh: 研究方向
+    en: Research
+  - id: people
+    file: people.html
+    zh: 团队成员
+    en: People
+  - id: publications
+    file: publications.html
+    zh: 论文成果
+    en: Publications
+  - id: news
+    file: news.html
+    zh: 新闻动态
+    en: null
+  - id: join
+    file: join.html
+    zh: 加入我们
+    en: Join Us
+
+ui:
+  zh:
+    home: 首页
+    colon: "："
+    recent_news: 最新动态
+    all_news: 全部动态
+    selected_pubs: 代表论文
+    all_pubs: 全部论文
+    research_areas: 研究方向
+    more: 了解更多
+    join_cta: 加入我们
+    join_lead: 实验室长期招收博士生、硕士生、本科实习生与访问学生。
+    lead_by: 负责教师
+    keywords: 关键词
+    highlights: 代表成果
+    recruiting: 招收中
+    recruiting_note: 该层级虚位以待，欢迎申请。
+    email: 邮箱
+    homepage: 个人主页
+    address: 地址
+    contact: 联系我们
+    quick_links: 快捷链接
+    lang_switch: English
+    lang_switch_file: en/index.html
+    copyright: 安全可信智能联合实验室
+    accepted: 已录用
+    type_conference: 会议
+    type_journal: 期刊
+    faculty_page: 学院主页
+  en:
+    home: Home
+    colon: ": "
+    recent_news: News
+    all_news: All news
+    selected_pubs: Selected Publications
+    all_pubs: All publications
+    research_areas: Research
+    more: Learn more
+    join_cta: Join us
+    join_lead: We are always looking for PhD students, master's students, undergraduate interns and visiting students.
+    lead_by: Lead
+    keywords: Keywords
+    highlights: Selected work
+    recruiting: Recruiting
+    recruiting_note: Positions open at this level. Applications welcome.
+    email: Email
+    homepage: Homepage
+    address: Address
+    contact: Contact
+    quick_links: Links
+    lang_switch: 中文
+    lang_switch_file: ../index.html
+    copyright: Joint Laboratory of Trustworthy and Secure Intelligence
+    accepted: accepted
+    type_conference: Conference
+    type_journal: Journal
+    faculty_page: Faculty page

@@ -1,0 +1,47 @@
+# 三个研究方向。lead 填 people.yaml 里教师的 id；highlights 填 publications.yaml 里的论文 id。
+- id: anon-net
+  title_zh: 匿名网络、协议安全与暗网治理
+  title_en: Anonymous Networks, Protocol Security & Dark Web Governance
+  lead: wang
+  keywords_zh: [匿名通信与隐私保护, 协议分析与漏洞挖掘, 暗网生态测量与治理, Tor 洋葱服务, 流量分析]
+  keywords_en: [Anonymous communication and privacy, Protocol analysis and vulnerability discovery, Dark web measurement and governance, Tor onion services, Traffic analysis]
+  summary_zh: >-
+    研究 Tor 等匿名网络的协议安全与去匿名化风险：分析协议设计中的可利用缺陷，评估洋葱服务的暴露面，
+    测量暗网生态并为治理提供技术支撑。相关漏洞获 Tor 官方认可并收录 CVE，成果发表于 IEEE S&P、INFOCOM、WWW。
+  summary_en: >-
+    We study protocol security and deanonymization risks in anonymous networks such as Tor: exploitable
+    flaws in protocol design, the exposure surface of onion services, and large-scale measurement of the
+    dark web ecosystem to support governance. Our findings have been acknowledged by the Tor Project with
+    CVE IDs and published at IEEE S&P, INFOCOM and WWW.
+  highlights: [sp2026, infocom2026, www2025, infocom2023, infocom2022]
+
+- id: trustworthy-llm
+  title_zh: 安全可信大模型
+  title_en: Safe and Trustworthy Large Language Models
+  lead: bao
+  keywords_zh: [AIGC 溯源检测, 机器生成文本检测, 大模型可靠推理, 安全可信智能体]
+  keywords_en: [AIGC detection and attribution, Machine-generated text detection, Reliable LLM reasoning, Safe and trustworthy agents]
+  summary_zh: >-
+    研究大模型生成内容的检测与溯源、推理过程的可靠性与可解释性，以及智能体的安全边界。
+    代表工作 Fast-DetectGPT（ICLR 2024）实现零样本机器生成文本检测，获《麻省理工科技评论》报道并商业化落地。
+  summary_en: >-
+    We work on detecting and attributing LLM-generated content, on the reliability and interpretability of
+    LLM reasoning, and on safety boundaries for agents. Fast-DetectGPT (ICLR 2024), our zero-shot detector
+    for machine-generated text, was covered by MIT Technology Review and is deployed commercially.
+  highlights: [iclr2025, iclr2024, tacl2026, emnlp2025, coling2025]
+
+- id: llm-agent-vertical
+  title_zh: 大模型智能体与垂直领域可信 AI
+  title_en: LLM Agents & Reliable AI for Vertical Domains
+  lead: hou
+  keywords_zh: [大模型与智能体, 知识图谱与图神经网络, 可信约束推理, 医疗与工程应用]
+  keywords_en: [LLMs and agents, Knowledge graphs and graph neural networks, Constrained and trustworthy reasoning, Healthcare and engineering applications]
+  summary_zh: >-
+    研究大模型在医疗诊疗、工程等垂直领域中的可靠约束推理、知识引导与可解释，以及图学习与知识图谱方法。
+    主持国家自然科学基金青年项目“面向异构超声报告审核的大模型可信推理方法研究”，成果发表于 TPAMI、TNNLS、TKDE、AAAI、IJCAI。
+  summary_en: >-
+    We study reliable, constrained and explainable LLM reasoning for vertical domains such as clinical
+    diagnosis and engineering, together with graph learning and knowledge-graph methods. The lead is PI of
+    an NSFC Young Scientists project on trustworthy LLM reasoning for ultrasound report auditing; results
+    appear in TPAMI, TNNLS, TKDE, AAAI and IJCAI.
+  highlights: [tpami2025, tnnls2024, kbs2025a, tkde2022, ijcai2021]

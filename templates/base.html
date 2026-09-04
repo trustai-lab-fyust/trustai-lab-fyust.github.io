@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="{{ lang_code }}">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>{% block title %}{{ site.short }}{% endblock %} · {{ t(site, 'name') }}</title>
+<meta name="description" content="{{ t(site, 'name') }} — {{ t(site, 'tagline') }}">
+<link rel="icon" type="image/svg+xml" href="{{ rel }}assets/img/logo.svg">
+<link rel="stylesheet" href="{{ rel }}assets/css/main.css">
+</head>
+<body>
+<nav class="site-nav">
+  <div class="container nav-inner">
+    <a class="nav-brand" href="{{ rel }}{{ 'en/' if lang == 'en' else '' }}index.html">
+      <img src="{{ rel }}assets/img/logo.svg" alt="" width="30" height="30">
+      <span class="brand-short">{{ site.short }}</span>
+      <span class="brand-full">{{ t(site, 'name') }}</span>
+    </a>
+    <input type="checkbox" id="nav-toggle" class="nav-toggle" aria-label="menu">
+    <label for="nav-toggle" class="nav-burger"><span></span><span></span><span></span></label>
+    <ul class="nav-menu">
+      {% for item in nav %}
+      <li><a href="{{ item.file }}" {% if page == item.id %}class="active"{% endif %}>{{ item[lang] }}</a></li>
+      {% endfor %}
+      <li><a class="lang-switch" href="{{ switch_href }}">{{ ui.lang_switch }}</a></li>
+    </ul>
+  </div>
+</nav>
+
+<main>
+{% block content %}{% endblock %}
+</main>
+
+<footer class="site-footer">
+  <div class="container footer-grid">
+    <div>
+      <div class="footer-name">{{ t(site, 'name') }}</div>
+      <div class="footer-sub">{{ site.name_en if lang == 'zh' else site.short }}</div>
+      <div class="footer-sub"><a href="{{ site.affiliation_url }}">{{ t(site, 'affiliation') }}</a></div>
+    </div>
+    <div>
+      <div class="footer-title">{{ ui.contact }}</div>
+      <div class="footer-line">{{ t(site, 'address') }}</div>
+      <div class="footer-line"><a href="mailto:{{ site.contact_email }}">{{ site.contact_email }}</a></div>
+      {% if site.github %}<div class="footer-line"><a href="{{ site.github }}">GitHub</a></div>{% endif %}
+    </div>
+    <div>
+      <div class="footer-title">{{ ui.quick_links }}</div>
+      <ul class="footer-links">
+        {% for item in nav %}<li><a href="{{ item.file }}">{{ item[lang] }}</a></li>{% endfor %}
+      </ul>
+    </div>
+  </div>
+  <div class="container footer-bottom">© {{ year }} {{ ui.copyright }}</div>
+</footer>
+</body>
+</html>

@@ -1,0 +1,64 @@
+# 加入我们。名额数字请以当年招生简章为准，这里不写具体数字。
+lead_zh: >-
+  实验室三位教师联合指导，长期招收博士生、硕士生、本科实习生与访问学生。
+  三个方向都欢迎申请：匿名网络与协议安全、安全可信大模型、大模型智能体与垂直领域可信 AI。
+lead_en: >-
+  The three faculty members co-supervise students and we are always looking for PhD students, master's students,
+  undergraduate interns and visiting students across our three lines: anonymous networks and protocol security,
+  safe and trustworthy LLMs, and LLM agents with reliable AI for vertical domains.
+
+offers_zh:
+  - 三位导师联合指导，安全与大模型两条线可以交叉选题。
+  - 真实问题与数据：面向公共安全部门的科研任务、医疗机构合作课题、已商业化落地的检测系统。
+  - 完整的学术训练：从选题、实验到顶会写作与评审。
+  - 算力与数据支持，按贡献署名。
+offers_en:
+  - Joint supervision by three faculty members; topics can span security and LLMs.
+  - "Real problems and data: public-safety research tasks, collaborations with hospitals, and a commercially deployed detection system."
+  - Full research training from problem selection and experiments to top-venue writing and reviewing.
+  - Compute and data support; authorship by contribution.
+
+sections:
+  - id: phd
+    title_zh: 博士生
+    title_en: PhD students
+    body_zh:
+      - 招收计算机、网络空间安全、人工智能及相关专业的申请者，名额以学校当年研究生招生简章为准。
+      - 安全方向需要扎实的系统与网络基础和较强的工程能力；大模型方向需要机器学习或自然语言处理基础。有论文、竞赛或开源项目经历者优先。
+      - 申请材料：简历、成绩单、代表性论文或项目、一页研究设想。邮件主题请写“博士申请-姓名-院校-意向方向”。
+    body_en:
+      - Applicants from computer science, cybersecurity, AI and related fields. Quotas follow the university's annual admission guide.
+      - The security line expects solid systems and networking foundations and strong engineering skills; the LLM line expects a machine learning or NLP background. Publications, competitions or open-source work are a plus.
+      - "Materials: CV, transcript, representative papers or projects, and a one-page research statement. Email subject: PhD application - name - university - intended line."
+  - id: master
+    title_zh: 硕士生
+    title_en: Master's students
+    body_zh:
+      - 招收学术型与专业型硕士，名额以学校当年研究生招生简章为准。
+      - 要求良好的编程与数学基础，对安全或大模型方向有明确兴趣。
+      - 申请材料：简历、成绩单、项目或竞赛经历。邮件主题请写“硕士申请-姓名-院校-意向方向”。
+    body_en:
+      - Academic and professional master's students. Quotas follow the university's annual admission guide.
+      - Good programming and mathematics foundations and a clear interest in security or LLMs.
+      - "Materials: CV, transcript, project or competition experience. Email subject: Master application - name - university - intended line."
+  - id: intern
+    title_zh: 本科生与实习生
+    title_en: Undergraduates and interns
+    body_zh:
+      - 欢迎校内外本科生参与科研训练，建议持续 6 个月以上，可远程。
+      - 参与真实课题，按贡献署名；表现优秀者优先推荐攻读研究生。
+      - 申请材料：简历、成绩单、可用时间。邮件主题请写“实习申请-姓名-院校-年级”。
+    body_en:
+      - Undergraduates from any university are welcome; we suggest a commitment of six months or longer, remote is possible.
+      - Work on real projects with authorship by contribution; strong interns are recommended for graduate admission.
+      - "Materials: CV, transcript, availability. Email subject: Internship application - name - university - year."
+  - id: visiting
+    title_zh: 访问学生与合作
+    title_en: Visiting students and collaboration
+    body_zh:
+      - 欢迎联合培养、访问研究和企业合作，请直接邮件联系对应方向的教师。
+    body_en:
+      - Joint training, visiting research and industry collaboration are welcome. Please email the faculty member of the relevant line.
+
+contact_zh: 申请请发邮件至对应方向的教师，或发至实验室联系邮箱。
+contact_en: Send applications to the faculty member of the relevant line, or to the lab contact email.

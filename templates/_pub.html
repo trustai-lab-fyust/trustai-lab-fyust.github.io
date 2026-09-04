@@ -1,0 +1,11 @@
+{# one publication row; expects `p` #}
+<li class="pub" data-year="{{ p.year }}">
+  <div class="pub-title">{{ p.title }}</div>
+  <div class="pub-authors">{{ p._authors_html }}</div>
+  <div class="pub-meta">
+    <span class="pub-venue">{{ p.venue }}</span>
+    {% if p.rank %}<span class="tag">{{ p.rank }}</span>{% endif %}
+    {% if p.status == 'accepted' %}<span class="tag tag-soft">{{ ui.accepted }}</span>{% endif %}
+    {% for l in p.links %}<a class="pub-link" href="{{ l.url }}">{{ l.label }}</a>{% endfor %}
+  </div>
+</li>
