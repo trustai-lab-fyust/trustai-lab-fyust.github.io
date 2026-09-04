@@ -40,7 +40,7 @@ python3 -m http.server -d dist 8000  # 浏览器打开 http://localhost:8000
   `data/research.yaml` 对应方向的 `highlights`。
 - 加动态：在 `data/news.yaml` 增加一条，`date` 写 `YYYY-MM` 或 `YYYY-MM-DD`。
 - 改招生说明：`data/join.yaml`。
-- 改后运行 `python3 build.py`，把 `dist/` 一起提交。
+- 改后提交推送即可，GitHub Actions 会自动重新生成并发布；本地运行 `python3 build.py` 只是为了预览。
 
 ## 上线
 
@@ -48,7 +48,7 @@ python3 -m http.server -d dist 8000  # 浏览器打开 http://localhost:8000
 
 1. 注册 GitHub 账号，新建组织（Organization），例如 `trustai-lab-fyust`。
 2. 在组织下新建公开仓库，名字必须是 `<组织名>.github.io`，例如 `trustai-lab-fyust.github.io`。
-3. 把本目录全部文件上传到仓库的 `main` 分支（网页端 "Add file → Upload files" 拖进去即可，或用 git push）。
+3. 把本目录全部文件推送到仓库的 `main` 分支（用 git push；网页端拖拽上传会丢掉 `.github` 这类以点开头的隐藏文件夹，慎用）。
 4. 仓库 Settings → Pages → Build and deployment → Source 选 **GitHub Actions**。
 5. 等 Actions 跑完，站点地址为 `https://<组织名>.github.io/`。以后每次提交自动重建。
 

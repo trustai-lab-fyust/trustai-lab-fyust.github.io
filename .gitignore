@@ -1,0 +1,5 @@
+__pycache__/
+.pytest_cache/
+*.pyc
+# dist/ 由 GitHub Actions 自动生成；本地只用来预览或手工上传
+dist/

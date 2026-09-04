@@ -26,7 +26,7 @@ intro_en: >-
 address_zh: 福建省福州高新技术产业开发区智慧大道 104 号，福耀科技大学计算与人工智能学院，邮编 350109
 address_en: School of Computing and AI, Fuyao University of Science and Technology, 104 Zhihui Avenue, Fuzhou High-tech Zone, Fuzhou, Fujian 350109, China
 contact_email: chunmianwang@fyust.edu.cn
-github: ""          # 建好 GitHub 组织后填，例如 https://github.com/trustai-lab-fyust
+github: https://github.com/trustai-lab-fyust
 
 # 成员层级，按页面显示顺序
 tiers:
