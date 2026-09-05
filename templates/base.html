@@ -47,14 +47,6 @@
     <div>
       <div class="footer-title">{{ ui.contact }}</div>
       <div class="footer-line">{{ t(site, 'address') }}</div>
-      <div class="footer-line"><a href="mailto:{{ site.contact_email }}">{{ site.contact_email }}</a></div>
-      {% if site.github %}<div class="footer-line"><a href="{{ site.github }}">GitHub</a></div>{% endif %}
-    </div>
-    <div>
-      <div class="footer-title">{{ ui.quick_links }}</div>
-      <ul class="footer-links">
-        {% for item in nav %}<li><a href="{{ item.file }}">{{ item[lang] }}</a></li>{% endfor %}
-      </ul>
     </div>
   </div>
   <div class="container footer-bottom">© {{ year }} {{ ui.copyright }}</div>

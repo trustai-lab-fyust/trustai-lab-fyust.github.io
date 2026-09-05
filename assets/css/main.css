@@ -175,7 +175,7 @@ ul { margin: 0; padding: 0; list-style: none; }
 .site-footer { background: var(--dark); color: rgba(255,255,255,.82); font-size: .88rem; padding: 2.4rem 0 1.2rem; margin-top: 0; }
 .site-footer a { color: rgba(255,255,255,.82); }
 .site-footer a:hover { color: #fff; }
-.footer-grid { display: grid; grid-template-columns: 1.4fr 1.4fr .8fr; gap: 2rem; }
+.footer-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 2rem; }
 .footer-name { font-weight: 700; color: #fff; font-size: 1.05rem; }
 .footer-sub { color: rgba(255,255,255,.6); margin-top: .2rem; }
 .footer-title { font-weight: 600; color: #fff; margin-bottom: .5rem; }
