@@ -83,10 +83,33 @@ def test_people_tiers_valid():
         assert person["tier"] in allowed, person
 
 
-def test_empty_tiers_show_recruiting_card(dist):
+def test_people_page_lists_everyone_and_recruits_for_empty_tiers(dist):
+    data = build.load_data(ROOT)
     zh = read(dist, "people.html")
-    assert "招收中" in zh
-    assert 'href="join.html"' in zh
+    en = read(dist, "en/people.html")
+    for person in data["people"]:
+        assert person["name_zh"] in zh, person["name_zh"]
+        assert person["name_en"] in en, person["name_en"]
+    empty = [t for t in data["site"]["tiers"] if t["id"] != "alumni" and not any(p["tier"] == t["id"] for p in data["people"])]
+    assert zh.count("招收中") == len(empty)
+
+
+def test_faculty_order_by_surname_pinyin(dist):
+    zh = read(dist, "people.html")
+    assert zh.index("鲍光胜") < zh.index("侯诚彬") < zh.index("王春棉")
+
+
+def test_school_logo_on_home(dist):
+    assert (dist / "assets/img/fyust-logo.png").is_file()
+    assert "assets/img/fyust-logo.png" in read(dist, "index.html")
+    assert "assets/img/fyust-logo.png" in read(dist, "en/index.html")
+
+
+def test_corresponding_author_legend(dist):
+    data = build.load_data(ROOT)
+    if any("*" in p["authors"] for p in data["publications"]):
+        assert "* 通讯作者" in read(dist, "publications.html")
+        assert "* Corresponding author" in read(dist, "en/publications.html")
 
 
 def test_publications_sorted_desc(dist):
@@ -128,3 +151,9 @@ def test_no_unparsed_yaml_structures(dist):
     for rel in ZH_PAGES + EN_PAGES:
         html = read(dist, rel)
         assert "{&#39;" not in html and "{'" not in html, rel
+
+
+def test_student_initials_not_bolded(dist):
+    html = read(dist, "publications.html")
+    assert "<strong>X. Lin</strong>" not in html
+    assert "<strong>C. Hou</strong>" in html

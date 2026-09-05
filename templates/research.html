@@ -21,6 +21,7 @@
       </div>
     </article>
     {% endfor %}
+    {% if has_corresponding %}<p class="pub-legend">{{ ui.corresponding_note }}</p>{% endif %}
   </div>
 </section>
 {% endblock %}

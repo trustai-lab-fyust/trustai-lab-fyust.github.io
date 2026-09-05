@@ -4,6 +4,8 @@
   <div class="person-body">
     <div class="person-name">{{ t(p, 'name') }}{% if lang == 'zh' %} <span class="person-alt">{{ p.name_en }}</span>{% endif %}</div>
     {% if p.title_zh or p.title_en %}<div class="person-title">{{ t(p, 'title') }}</div>{% endif %}
+    {% if p.affiliation_zh or p.affiliation_en %}<div class="person-title">{{ t(p, 'affiliation') }}</div>{% endif %}
+    {% if p.note_zh or p.note_en %}<div class="person-note"><span class="tag tag-soft">{{ t(p, 'note') }}</span></div>{% endif %}
     {% if p.since %}<div class="person-title">{{ p.since }}{{ ' 级' if lang == 'zh' else '' }}{% if p.advisor and p.advisor in people_by_id %} · {{ t(people_by_id[p.advisor], 'name') }}{% endif %}</div>{% endif %}
     {% if p.destination_zh or p.destination_en %}<div class="person-title">{{ t(p, 'destination') }}</div>{% endif %}
     {% if size == 'lg' and (p.bio_zh or p.bio_en) %}<p class="person-bio">{{ t(p, 'bio') }}</p>{% endif %}

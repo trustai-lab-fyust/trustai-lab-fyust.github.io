@@ -39,6 +39,8 @@ ul { margin: 0; padding: 0; list-style: none; }
 .nav-toggle, .nav-burger { display: none; }
 
 /* hero */
+.school-logo-link { display: inline-block; margin-bottom: 1.1rem; }
+.school-logo { height: 52px; width: auto; }
 .hero { background: linear-gradient(180deg, var(--primary-light) 0%, #fff 100%); border-bottom: 1px solid var(--border); padding: 3.5rem 0 3rem; }
 .hero-kicker { font-size: .85rem; color: var(--muted); letter-spacing: .04em; margin-bottom: .6rem; }
 .hero-title { font-size: 2.3rem; letter-spacing: .01em; }
@@ -122,6 +124,10 @@ ul { margin: 0; padding: 0; list-style: none; }
 .pub-meta { font-size: .84rem; color: var(--muted); display: flex; flex-wrap: wrap; gap: .5rem; align-items: center; margin-top: .15rem; }
 .pub-venue { color: var(--text-2); font-weight: 500; }
 .pub-link { font-size: .82rem; border: 1px solid var(--border); border-radius: 4px; padding: 0 .45rem; }
+.pub-legend { font-size: .84rem; color: var(--muted); margin: 0 0 .5rem; }
+.person-note { margin-top: .3rem; }
+.compute-box { margin: 0 0 1.6rem; background: var(--primary-light); border: 1px solid var(--border); border-radius: 8px; padding: 1.1rem 1.4rem; }
+.compute-box p { margin: 0; color: var(--text-2); }
 .year-title { font-size: 1.2rem; margin: 1.2rem 0 .9rem; color: var(--accent); }
 
 /* news */
@@ -174,6 +180,7 @@ ul { margin: 0; padding: 0; list-style: none; }
   .cards-3, .people-grid, .offer-list, .footer-grid { grid-template-columns: 1fr; }
   .hero { padding: 2.4rem 0 2.2rem; }
   .hero-title { font-size: 1.7rem; }
+  .school-logo { height: 40px; }
   .person-lg { flex-direction: column; }
   .area { grid-template-columns: 1fr; }
   .cta-inner { flex-direction: column; align-items: flex-start; }

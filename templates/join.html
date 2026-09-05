@@ -8,6 +8,12 @@
     <ul class="offer-list">
       {% for o in t(join, 'offers') %}<li>{{ o }}</li>{% endfor %}
     </ul>
+    {% if join.compute_zh or join.compute_en %}
+    <div class="compute-box">
+      <h2 class="join-title">{{ ui.compute_title }}</h2>
+      <p>{{ t(join, 'compute') }}</p>
+    </div>
+    {% endif %}
     {% for s in join.sections %}
     <article class="join-section" id="{{ s.id }}">
       <h2 class="join-title">{{ t(s, 'title') }}</h2>

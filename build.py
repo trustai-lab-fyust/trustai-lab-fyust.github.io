@@ -20,7 +20,7 @@ LANGS = {
     "zh": {"code": "zh-CN", "prefix": "", "pages": ["index", "research", "people", "publications", "news", "join"]},
     "en": {"code": "en", "prefix": "en/", "pages": ["index", "research", "people", "publications", "join"]},
 }
-TIER_COLORS = {"faculty": "#1f4e79", "phd": "#2d6a4f", "master": "#7b4f9d", "intern": "#b5651d", "alumni": "#6b7a8d"}
+TIER_COLORS = {"faculty": "#1f4e79", "graduate": "#2d6a4f", "intern": "#b5651d", "undergrad": "#7b4f9d", "alumni": "#6b7a8d"}
 
 
 CJK_GAP = re.compile(r"(?<=[\u4e00-\u9fff\u3000-\u303f\uff00-\uffef])\s+(?=[\u4e00-\u9fff\u3000-\u303f\uff00-\uffef])")
@@ -56,11 +56,15 @@ def load_data(root):
 
 
 def person_aliases(person):
-    """Name forms used to bold lab members inside author strings."""
+    """Name forms used to bold lab members inside author strings.
+
+    The abbreviated form (e.g. "C. Hou") is only used for faculty; for students it is
+    too ambiguous (an "X. Lin" in an author list may be someone else).
+    """
     full = person["name_en"].strip()
     parts = full.split()
     aliases = [full]
-    if len(parts) >= 2:
+    if len(parts) >= 2 and person.get("tier") == "faculty":
         aliases.append(f"{parts[0][0]}. {parts[-1]}")
     return aliases
 
@@ -115,6 +119,7 @@ def build(root, out):
     pubs_by_id = {p["id"]: p for p in pubs}
     for p in pubs:
         p["_authors_html"] = bold_members(p["authors"], aliases)
+    has_corresponding = any("*" in p["authors"] for p in pubs)
     news = sorted(data["news"], key=lambda n: str(n["date"]), reverse=True)
     research = data["research"]
     for area in research:
@@ -166,6 +171,7 @@ def build(root, out):
                 people_by_tier=people_by_tier,
                 pubs=pubs,
                 selected_pubs=selected,
+                has_corresponding=has_corresponding,
                 news=news,
                 recent_news=news[:5],
                 join=data["join"],

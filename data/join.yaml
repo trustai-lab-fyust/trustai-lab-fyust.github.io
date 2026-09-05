@@ -11,12 +11,21 @@ offers_zh:
   - 三位导师联合指导，安全与大模型两条线可以交叉选题。
   - 真实问题与数据：面向公共安全部门的科研任务、医疗机构合作课题、已商业化落地的检测系统。
   - 完整的学术训练：从选题、实验到顶会写作与评审。
-  - 算力与数据支持，按贡献署名。
+  - 论文按贡献署名。
 offers_en:
   - Joint supervision by three faculty members; topics can span security and LLMs.
   - "Real problems and data: public-safety research tasks, collaborations with hospitals, and a commercially deployed detection system."
   - Full research training from problem selection and experiments to top-venue writing and reviewing.
-  - Compute and data support; authorship by contribution.
+  - Authorship by contribution.
+
+# 算力与硬件（侯诚彬提供，2026-09-05）
+compute_zh: >-
+  团队能为科研与项目提供充裕的算力支撑，包含百卡 GPU 集群（单卡显存 ≥ 80G、单机显存和内存高达近 1.5T）等，
+  并支持有能力、有想法的同学开展具身智能等研究。
+compute_en: >-
+  The team provides ample compute for research and projects, including a GPU cluster of over one hundred
+  cards (at least 80 GB of memory per card, and up to nearly 1.5 TB of GPU memory plus RAM per node), and
+  supports capable, motivated students in pursuing research such as embodied AI.
 
 sections:
   - id: phd

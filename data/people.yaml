@@ -1,8 +1,9 @@
-# 成员。tier 取值：faculty / phd / master / intern / alumni（见 site.yaml 的 tiers）。
+# 成员。tier 取值：faculty（教师）/ graduate（研究生）/ intern（实习生）/ undergrad（本科生）/ alumni（校友），见 site.yaml 的 tiers。
+# 教师按姓氏拼音排序：鲍、侯、王。学生条目可加 note_zh/note_en（如 联合指导）、affiliation_zh/affiliation_en（如 实习生所在学校）。
 # 照片放 assets/img/people/<id>.jpg 并填 photo 字段；不填则显示姓名首字占位图。
 # 学生条目示例（复制后去掉前面的 # 号）：
 # - id: zhangsan
-#   tier: phd
+#   tier: graduate
 #   name_zh: 张三
 #   name_en: San Zhang
 #   since: 2026            # 入学年份
@@ -15,12 +16,40 @@
 #   bio_en: One-line bio.
 # 校友条目加 left: 2029 和 destination_zh / destination_en（去向）。
 
+- id: bao
+  tier: faculty
+  name_zh: 鲍光胜
+  name_en: Guangsheng Bao
+  title_zh: 博士
+  title_en: Ph.D.
+  direction: trustworthy-llm
+  email: baoguangsheng@fyust.edu.cn
+  homepage: https://baoguangsheng.github.io/
+  links:
+    - label: GitHub
+      url: https://github.com/baoguangsheng
+    - label: Google Scholar
+      url: https://scholar.google.com/citations?user=cxPJx2kAAAAJ
+    - label: 学院主页
+      label_en: Faculty page
+      url: https://cs.fyust.edu.cn/szdw/jsdw/bgs.htm
+  photo: bao.jpg
+  bio_zh: >-
+    浙江大学计算机科学与技术博士（西湖大学联合培养），曾任职微软（中国）亚洲工程院、阿里巴巴数据科学研究院，
+    2026 年 7 月加入福耀科技大学。研究聚焦安全可信大模型，包括 AIGC 溯源检测、大模型可靠推理、安全可信智能体，
+    在 ACL、ICLR、TACL 等发表论文二十余篇。代表工作 Fast-DetectGPT（ICLR 2024）获《麻省理工科技评论》报道并商业化落地。
+  bio_en: >-
+    PhD from Zhejiang University (jointly trained at Westlake University); formerly at Microsoft (China) and Alibaba;
+    joined FYUST in July 2026. Works on safe and trustworthy LLMs: AIGC detection and attribution, reliable LLM
+    reasoning and safe agents, with 20+ papers in ACL, ICLR and TACL. Fast-DetectGPT (ICLR 2024) was covered by
+    MIT Technology Review and is deployed commercially.
+
 - id: hou
   tier: faculty
   name_zh: 侯诚彬
   name_en: Chengbin Hou
-  title_zh: 助理教授，院长助理
-  title_en: Assistant Professor; Assistant to the Dean
+  title_zh: 博士
+  title_en: Ph.D.
   direction: llm-agent-vertical
   email: houcb@fyust.edu.cn
   homepage: https://cs.fyust.edu.cn/szdw/jsdw/hcb.htm
@@ -45,8 +74,8 @@
   tier: faculty
   name_zh: 王春棉
   name_en: Chunmian Wang
-  title_zh: 助理教授
-  title_en: Assistant Professor
+  title_zh: 博士
+  title_en: Ph.D.
   direction: anon-net
   email: chunmianwang@fyust.edu.cn
   homepage: https://cs.fyust.edu.cn/szdw/jsdw/wcm.htm
@@ -61,30 +90,21 @@
     Works on anonymous network protocols and traffic analysis, vulnerability discovery and dark web governance.
     Vulnerabilities acknowledged by the Tor Project with CVE IDs and a bug bounty; papers in IEEE S&P, INFOCOM, WWW and TNSE.
 
-- id: bao
-  tier: faculty
-  name_zh: 鲍光胜
-  name_en: Guangsheng Bao
-  title_zh: 助理教授
-  title_en: Assistant Professor
-  direction: trustworthy-llm
-  email: baoguangsheng@fyust.edu.cn
-  homepage: https://baoguangsheng.github.io/
-  links:
-    - label: GitHub
-      url: https://github.com/baoguangsheng
-    - label: Google Scholar
-      url: https://scholar.google.com/citations?user=cxPJx2kAAAAJ
-    - label: 学院主页
-      label_en: Faculty page
-      url: https://cs.fyust.edu.cn/szdw/jsdw/bgs.htm
-  photo: bao.jpg
-  bio_zh: >-
-    浙江大学计算机科学与技术博士（西湖大学联合培养），曾任职微软（中国）亚洲工程院、阿里巴巴数据科学研究院，
-    2026 年 7 月加入福耀科技大学。研究聚焦安全可信大模型，包括 AIGC 溯源检测、大模型可靠推理、安全可信智能体，
-    在 ACL、ICLR、TACL 等发表论文二十余篇。代表工作 Fast-DetectGPT（ICLR 2024）获《麻省理工科技评论》报道并商业化落地。
-  bio_en: >-
-    PhD from Zhejiang University (jointly trained at Westlake University); formerly at Microsoft (China) and Alibaba;
-    joined FYUST in July 2026. Works on safe and trustworthy LLMs: AIGC detection and attribution, reliable LLM
-    reasoning and safe agents, with 20+ papers in ACL, ICLR and TACL. Fast-DetectGPT (ICLR 2024) was covered by
-    MIT Technology Review and is deployed commercially.
+# ---------- 研究生 ----------
+- {id: chenyifei, tier: graduate, name_zh: 陈怡飞, name_en: Yifei Chen}
+- {id: linxinyu, tier: graduate, name_zh: 林新宇, name_en: Xinyu Lin, note_zh: 联合指导, note_en: Co-supervised}
+- {id: luhaowen, tier: graduate, name_zh: 陆颢文, name_en: Haowen Lu}
+- {id: pengyiwei, tier: graduate, name_zh: 彭溢炜, name_en: Yiwei Peng, note_zh: 联合指导, note_en: Co-supervised}
+- {id: quanjiazheng, tier: graduate, name_zh: 全嘉政, name_en: Jiazheng Quan}
+- {id: tangyufei, tier: graduate, name_zh: 汤雨飞, name_en: Yufei Tang, note_zh: 联合指导, note_en: Co-supervised}
+- {id: yangyuhang, tier: graduate, name_zh: 杨宇航, name_en: Yuhang Yang}
+
+# ---------- 实习生 ----------
+- {id: caojingwen, tier: intern, name_zh: 曹竞文, name_en: Jingwen Cao, affiliation_zh: 清华大学, affiliation_en: Tsinghua University}
+- {id: tianbangxu, tier: intern, name_zh: 田邦序, name_en: Bangxu Tian, affiliation_zh: 伦敦大学学院（UCL）, affiliation_en: University College London (UCL)}
+
+# ---------- 本科生 ----------
+- {id: huangjunxiang, tier: undergrad, name_zh: 黄俊翔, name_en: Junxiang Huang}
+- {id: liyuxuan, tier: undergrad, name_zh: 李宇轩, name_en: Yuxuan Li}
+- {id: xujunxi, tier: undergrad, name_zh: 许俊淅, name_en: Junxi Xu}
+- {id: zhuxinghan, tier: undergrad, name_zh: 朱星翰, name_en: Xinghan Zhu}

@@ -3,6 +3,7 @@
 {% block content %}
 <section class="hero">
   <div class="container">
+    <a class="school-logo-link" href="{{ site.school_url }}"><img class="school-logo" src="{{ rel }}{{ site.school_logo }}" alt="{{ ui.school_logo_alt }}"></a>
     <div class="hero-kicker">{{ t(site, 'affiliation') }}</div>
     <h1 class="hero-title">{{ t(site, 'name') }}</h1>
     {% if lang == 'zh' %}<div class="hero-en">{{ site.name_en }} · {{ site.short }}</div>{% else %}<div class="hero-en">{{ site.short }}</div>{% endif %}

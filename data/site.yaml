@@ -5,6 +5,8 @@ short: TrustAI Lab
 affiliation_zh: 福耀科技大学 计算与人工智能学院
 affiliation_en: School of Computing and Artificial Intelligence, Fuyao University of Science and Technology
 affiliation_url: https://cs.fyust.edu.cn/
+school_url: https://www.fyust.edu.cn/
+school_logo: assets/img/fyust-logo.png
 
 tagline_zh: 面向大模型时代的安全与可信
 tagline_en: Security and trust for the era of large models
@@ -33,15 +35,15 @@ tiers:
   - id: faculty
     zh: 教师
     en: Faculty
-  - id: phd
-    zh: 博士生
-    en: PhD Students
-  - id: master
-    zh: 硕士生
-    en: Master's Students
+  - id: graduate
+    zh: 研究生
+    en: Graduate Students
   - id: intern
-    zh: 本科生与实习生
-    en: Undergraduates & Interns
+    zh: 实习生
+    en: Interns
+  - id: undergrad
+    zh: 本科生
+    en: Undergraduates
   - id: alumni
     zh: 校友
     en: Alumni
@@ -98,6 +100,9 @@ ui:
     type_conference: 会议
     type_journal: 期刊
     faculty_page: 学院主页
+    corresponding_note: "* 通讯作者"
+    compute_title: 算力与硬件
+    school_logo_alt: 福耀科技大学
   en:
     home: Home
     colon: ": "
@@ -126,3 +131,6 @@ ui:
     type_conference: Conference
     type_journal: Journal
     faculty_page: Faculty page
+    corresponding_note: "* Corresponding author"
+    compute_title: Compute and Hardware
+    school_logo_alt: Fuyao University of Science and Technology

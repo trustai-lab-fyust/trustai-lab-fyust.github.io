@@ -1,4 +1,4 @@
-# 论文。id 供 research.yaml 引用；year 用于排序；type 为 conference 或 journal；rank 可空。
+# 论文。作者名后加 * 表示通讯作者。id 供 research.yaml 引用；year 用于排序；type 为 conference 或 journal；rank 可空。
 # 来源：三位教师学院主页（2026-09-04）。links 可填 pdf / code / arxiv 等。
 - id: sp2026
   year: 2026
@@ -35,7 +35,7 @@
   links: []
 - id: cscwd2026
   year: 2026
-  authors: Zhouguo Chen, Chunmian Wang, Leran Ren, Ming Yang
+  authors: Zhouguo Chen, Chunmian Wang*, Leran Ren, Ming Yang
   title: "Seeing Through .onion: Multimodal Information Extraction and Category Discovery in Tor Markets"
   venue: CSCWD 2026
   venue_full: 28th International Conference on Computer Supported Cooperative Work in Design
@@ -108,7 +108,7 @@
   links: []
 - id: tpami2025
   year: 2025
-  authors: W. Mao, C. Hou, T. Zhang, X. Lin, K. Tang, H. Lv
+  authors: W. Mao, C. Hou*, T. Zhang, X. Lin, K. Tang, H. Lv*
   title: "Parse Trees Guided LLM Prompt Compression"
   venue: IEEE TPAMI 2025
   venue_full: IEEE Transactions on Pattern Analysis and Machine Intelligence
@@ -118,7 +118,7 @@
   links: []
 - id: kbs2025a
   year: 2025
-  authors: X. Lin, T. Zhang, C. Hou, J. Wang, J. Xue, H. Lv
+  authors: X. Lin, T. Zhang, C. Hou*, J. Wang, J. Xue, H. Lv
   title: "Node Importance Estimation Leveraging LLMs for Semantic Augmentation in Knowledge Graphs"
   venue: Knowledge-Based Systems 2025
   venue_full: Knowledge-Based Systems
@@ -128,7 +128,7 @@
   links: []
 - id: kbs2025b
   year: 2025
-  authors: J. Song, Y. Shen, C. Hou, P. Wang, J. Wang, K. Tang, H. Lv
+  authors: J. Song, Y. Shen, C. Hou*, P. Wang, J. Wang, K. Tang, H. Lv*
   title: "FedAGHN: Personalized Federated Learning with Attentive Graph HyperNetworks"
   venue: Knowledge-Based Systems 2025
   venue_full: Knowledge-Based Systems
@@ -138,7 +138,7 @@
   links: []
 - id: aaai2025
   year: 2025
-  authors: H. Liang, G. Xie, C. Hou, B. Wang, C. Gao, J. Wang
+  authors: H. Liang, G. Xie, C. Hou, B. Wang, C. Gao, J. Wang*
   title: "Look Inside for More: Internal Spatial Modality Perception for 3D Anomaly Detection"
   venue: AAAI 2025
   venue_full: 39th AAAI Conference on Artificial Intelligence
@@ -148,7 +148,7 @@
   links: []
 - id: jtcm2025
   year: 2025
-  authors: C. Hou, Y. Gao, X. Lin, J. Wu, N. Li, H. Lv, C. Chu
+  authors: C. Hou, Y. Gao, X. Lin, J. Wu, N. Li, H. Lv, C. Chu*
   title: "A Review of Recent Artificial Intelligence for Traditional Medicine"
   venue: J. Traditional and Complementary Medicine 2025
   venue_full: Journal of Traditional and Complementary Medicine (cover paper)
@@ -169,7 +169,7 @@
   links: []
 - id: tnnls2024
   year: 2024
-  authors: T. Zhang, C. Hou, R. Jiang, X. Zhang, C. Zhou, K. Tang, H. Lv
+  authors: T. Zhang, C. Hou*, R. Jiang, X. Zhang, C. Zhou, K. Tang, H. Lv*
   title: "Label Informed Contrastive Pretraining for Node Importance Estimation on Knowledge Graphs"
   venue: IEEE TNNLS 2024
   venue_full: IEEE Transactions on Neural Networks and Learning Systems
@@ -253,7 +253,7 @@
   links: []
 - id: mee2023
   year: 2023
-  authors: C. Hou, X. Lin, H. Huang, S. Xu, J. Fan, Y. Shi, H. Lv
+  authors: C. Hou, X. Lin, H. Huang, S. Xu, J. Fan, Y. Shi*, H. Lv*
   title: "Fossil Image Identification using Deep Learning Ensembles of Data Augmented Multiviews"
   venue: Methods in Ecology and Evolution 2023
   venue_full: Methods in Ecology and Evolution
@@ -273,7 +273,7 @@
   links: []
 - id: tkde2022
   year: 2022
-  authors: C. Hou, H. Zhang, S. He, K. Tang
+  authors: C. Hou, H. Zhang, S. He, K. Tang*
   title: "GloDyNE: Global Topology Preserving Dynamic Network Embedding"
   venue: IEEE TKDE 2022
   venue_full: IEEE Transactions on Knowledge and Data Engineering
@@ -285,7 +285,7 @@
       url: https://github.com/houchengbin/GloDyNE
 - id: ijcai2021
   year: 2021
-  authors: C. Hou, K. Tang
+  authors: C. Hou, K. Tang*
   title: "Towards Robust Dynamic Network Embedding"
   venue: IJCAI 2021
   venue_full: 30th International Joint Conference on Artificial Intelligence
@@ -315,7 +315,7 @@
   links: []
 - id: neucom2020
   year: 2020
-  authors: C. Hou, S. He, K. Tang
+  authors: C. Hou, S. He*, K. Tang*
   title: "RoSANE: Robust and Scalable Attributed Network Embedding for Sparse Networks"
   venue: Neurocomputing 2020
   venue_full: Neurocomputing
