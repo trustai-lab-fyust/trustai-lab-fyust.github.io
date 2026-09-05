@@ -200,4 +200,7 @@ def test_join_offer_blocks(dist):
         assert html.count('class="offer-box"') == 4, rel
         for offer in data["join"]["offers"]:
             assert offer[f"title_{lang}"] in html, (rel, offer["title_zh"])
-    assert "compute-box" not in read(dist, "join.html")
+    for rel, lang in [("join.html", "zh"), ("en/join.html", "en")]:
+        html = read(dist, rel)
+        assert html.count('class="compute-box"') == 1, rel
+        assert data["join"][f"compute_{lang}"][:20] in html, rel

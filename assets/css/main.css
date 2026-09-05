@@ -151,10 +151,13 @@ ul { margin: 0; padding: 0; list-style: none; }
 .news-list-page .news-item { padding: .6rem 0; border-bottom: 1px solid var(--border); }
 
 /* join */
-.offer-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 1.1rem; align-items: stretch; margin: 1.4rem 0 2rem; }
-.offer-box { background: var(--primary-light); border: 1px solid #dbe6f1; border-radius: 8px; padding: 1.1rem 1.3rem 1.2rem; }
-.offer-title { font-weight: 700; color: var(--primary); font-size: 1.02rem; margin-bottom: .45rem; }
-.offer-text { font-size: .9rem; color: var(--text-2); margin: 0; }
+.compute-box { background: var(--primary-light); border: 1px solid #d3e0ee; border-left: 5px solid var(--primary); border-radius: 8px; padding: 1.2rem 1.5rem 1.3rem; margin: 1.5rem 0 1.1rem; }
+.compute-title { font-weight: 700; color: var(--primary); font-size: 1.12rem; margin-bottom: .5rem; }
+.compute-text { font-size: .95rem; color: var(--text-2); margin: 0; }
+.offer-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 1rem; align-items: stretch; margin: 0 0 2rem; }
+.offer-box { background: #fff; border: 1px solid var(--border); border-radius: 8px; padding: 1rem 1.1rem 1.1rem; border-top: 3px solid var(--accent); }
+.offer-title { font-weight: 700; color: var(--primary); font-size: .96rem; margin-bottom: .4rem; }
+.offer-text { font-size: .87rem; color: var(--text-2); margin: 0; }
 .join-section { padding: 1.3rem 0; border-top: 1px solid var(--border); }
 .join-title { font-size: 1.15rem; margin-bottom: .6rem; }
 .join-body li { position: relative; padding-left: 1.1rem; color: var(--text-2); margin-bottom: .35rem; font-size: .95rem; }
@@ -183,7 +186,7 @@ ul { margin: 0; padding: 0; list-style: none; }
 
 /* responsive */
 @media (max-width: 900px) {
-  .cards-3 { grid-template-columns: 1fr 1fr; }
+  .cards-3, .offer-grid { grid-template-columns: 1fr 1fr; }
   .areas-home { grid-template-columns: 1fr; }
   .area-figure { width: 200px; }
   .faculty-grid { grid-template-columns: 1fr; }
@@ -203,7 +206,8 @@ ul { margin: 0; padding: 0; list-style: none; }
 }
 @media (max-width: 640px) {
   body { font-size: 15px; }
-  .cards-3, .offer-grid, .footer-grid { grid-template-columns: 1fr; }
+  .cards-3, .footer-grid { grid-template-columns: 1fr; }
+  .offer-grid { grid-template-columns: 1fr 1fr; gap: .7rem; }
   .name-grid { grid-template-columns: repeat(2, 1fr); }
   .hero { padding: 2.4rem 0 2.2rem; }
   .hero-title { font-size: 1.7rem; }

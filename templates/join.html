@@ -5,6 +5,10 @@
 <section class="section">
   <div class="container">
     <p class="lead">{{ t(join, 'lead') }}</p>
+    <div class="compute-box">
+      <div class="compute-title">{{ t(join, 'compute_title') }}</div>
+      <p class="compute-text">{{ t(join, 'compute') }}</p>
+    </div>
     <div class="offer-grid">
       {% for o in join.offers %}
       <div class="offer-box">
