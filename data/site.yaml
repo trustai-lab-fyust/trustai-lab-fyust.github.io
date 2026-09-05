@@ -8,8 +8,9 @@ affiliation_url: https://cs.fyust.edu.cn/
 school_url: https://www.fyust.edu.cn/
 school_logo: assets/img/fyust-logo.png
 
-tagline_zh: 面向大模型时代的安全与可信
-tagline_en: Security and trust for the era of large models
+# 首屏一句话：三个分句分别对应三个研究方向
+tagline_zh: 让大模型的输出可检验、智能体的行为可约束、系统与网络的风险可防御
+tagline_en: Verifiable model outputs, constrained agent behaviour, defensible systems and networks
 
 # 首页曾用的一段简介，现在首页不显示；想恢复的话在 templates/index.html 里加回 site.intro
 intro_zh: >-

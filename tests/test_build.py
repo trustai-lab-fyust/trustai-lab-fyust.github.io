@@ -182,3 +182,11 @@ def test_footer_quick_links(dist):
         for link in data["site"]["footer_links"]:
             assert link["url"] in footer, (rel, link["url"])
             assert link[lang] in footer, (rel, link[lang])
+
+
+def test_hero_tagline(dist):
+    data = build.load_data(ROOT)
+    for rel, lang in [("index.html", "zh"), ("en/index.html", "en")]:
+        html = read(dist, rel)
+        assert data["site"][f"tagline_{lang}"] in html, rel
+    assert "hero-mission" not in read(dist, "index.html")
