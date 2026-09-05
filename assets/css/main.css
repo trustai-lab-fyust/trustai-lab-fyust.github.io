@@ -81,6 +81,18 @@ ul { margin: 0; padding: 0; list-style: none; }
 .card-text { font-size: .9rem; color: var(--text-2); flex: 1; margin-bottom: .8rem; display: -webkit-box; -webkit-line-clamp: 5; -webkit-box-orient: vertical; overflow: hidden; }
 .card-foot { font-size: .82rem; color: var(--muted); }
 
+/* research cards with figures (home) */
+.areas-title { margin-top: 2rem; }
+.areas-home { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.4rem; }
+.area-card { display: flex; flex-direction: column; border: 1px solid var(--border); border-radius: 10px; overflow: hidden; background: #fff; color: inherit; transition: border-color .15s, box-shadow .15s; }
+.area-card:hover { text-decoration: none; color: inherit; border-color: var(--primary-2); box-shadow: 0 6px 18px rgba(31,78,121,.09); }
+.area-img { width: 100%; aspect-ratio: 3 / 2; object-fit: cover; display: block; background: var(--primary-light); border-bottom: 1px solid var(--border); }
+.area-card-body { padding: 1.05rem 1.2rem 1.2rem; }
+.area-card-title { font-size: 1.08rem; margin-bottom: .5rem; }
+.area-card-text { font-size: .9rem; color: var(--text-2); margin: 0; }
+.area-figure { float: right; width: 240px; margin: 0 0 .8rem 1.4rem; border-radius: 8px; border: 1px solid var(--border); }
+.area-body::after { content: ""; display: block; clear: both; }
+
 /* people */
 .person-img { width: 120px; height: 120px; border-radius: 8px; object-fit: cover; flex: none; }
 .person-mini { align-items: center; text-align: center; }
@@ -174,6 +186,8 @@ ul { margin: 0; padding: 0; list-style: none; }
 /* responsive */
 @media (max-width: 900px) {
   .cards-3 { grid-template-columns: 1fr 1fr; }
+  .areas-home { grid-template-columns: 1fr; }
+  .area-figure { width: 200px; }
   .people-grid { grid-template-columns: repeat(3, 1fr); }
   .two-col { grid-template-columns: 1fr; gap: 2rem; }
   .footer-grid { grid-template-columns: 1fr 1fr; }
@@ -200,5 +214,6 @@ ul { margin: 0; padding: 0; list-style: none; }
   .brand-top { font-size: .92rem; }
   .person-lg { flex-direction: column; }
   .area { grid-template-columns: 1fr; }
+  .area-figure { float: none; width: 100%; margin: 0 0 .8rem; }
   .cta-inner { flex-direction: column; align-items: flex-start; }
 }

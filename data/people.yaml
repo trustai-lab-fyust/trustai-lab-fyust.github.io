@@ -8,7 +8,7 @@
 #   name_en: San Zhang
 #   since: 2026            # 入学年份
 #   advisor: wang          # 导师 id
-#   direction: anon-net    # 方向 id
+#   direction: sys-net-sec    # 方向 id
 #   email: zhangsan@example.com
 #   homepage: ""
 #   photo: ""
@@ -76,7 +76,7 @@
   name_en: Chunmian Wang
   title_zh: 博士
   title_en: Ph.D.
-  direction: anon-net
+  direction: sys-net-sec
   email: chunmianwang@fyust.edu.cn
   homepage: https://cs.fyust.edu.cn/szdw/jsdw/wcm.htm
   links: []

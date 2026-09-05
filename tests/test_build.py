@@ -157,3 +157,11 @@ def test_student_initials_not_bolded(dist):
     html = read(dist, "publications.html")
     assert "<strong>X. Lin</strong>" not in html
     assert "<strong>C. Hou</strong>" in html
+
+
+def test_research_images_exist(dist):
+    data = build.load_data(ROOT)
+    for area in data["research"]:
+        assert (dist / "assets/img/research" / area["image"]).is_file(), area["id"]
+    zh = read(dist, "index.html")
+    assert "匿名网络" not in zh

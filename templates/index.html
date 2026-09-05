@@ -16,26 +16,22 @@
 <section class="section">
   <div class="container">
     <p class="lead">{{ t(site, 'intro') }}</p>
-  </div>
-</section>
-
-<section class="section section-alt">
-  <div class="container">
-    <h2 class="section-title">{{ ui.research_areas }}</h2>
-    <div class="cards cards-3">
+    <h2 class="section-title areas-title">{{ ui.research_areas }}</h2>
+    <div class="areas-home">
       {% for a in research %}
-      <a class="card card-link" href="research.html#{{ a.id }}">
-        <div class="card-index">0{{ loop.index }}</div>
-        <h3 class="card-title">{{ t(a, 'title') }}</h3>
-        <p class="card-text">{{ t(a, 'summary') }}</p>
-        <div class="card-foot">{{ ui.lead_by }}{{ ui.colon }}{{ t(a._lead, 'name') }}</div>
+      <a class="area-card" href="research.html#{{ a.id }}">
+        <img class="area-img" src="{{ rel }}assets/img/research/{{ a.image }}" alt="{{ t(a, 'title') }}" loading="lazy">
+        <div class="area-card-body">
+          <h3 class="area-card-title">{{ t(a, 'title') }}</h3>
+          <p class="area-card-text">{{ t(a, 'summary') }}</p>
+        </div>
       </a>
       {% endfor %}
     </div>
   </div>
 </section>
 
-<section class="section">
+<section class="section section-alt">
   <div class="container">
     <h2 class="section-title">{{ tiers[0][lang] }}</h2>
     <div class="cards cards-3">
@@ -53,7 +49,7 @@
   </div>
 </section>
 
-<section class="section section-alt">
+<section class="section">
   <div class="container two-col">
     <div>
       <h2 class="section-title">{{ ui.selected_pubs }}</h2>

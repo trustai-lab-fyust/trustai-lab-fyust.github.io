@@ -13,17 +13,16 @@ tagline_en: Security and trust for the era of large models
 
 # 首页一段话
 intro_zh: >-
-  安全可信智能联合实验室由福耀科技大学计算与人工智能学院三位教师联合组建，围绕匿名网络与协议安全、
-  安全可信大模型、大模型智能体与垂直领域可信 AI 三个方向开展研究。三个方向在“可信大模型与智能体”上交汇：
-  既研究网络与系统层面的攻击与防御，也研究大模型自身的检测、推理可靠性与智能体安全，并把方法落到医疗、
-  工程和公共安全等真实场景。
+  安全可信智能联合实验室由福耀科技大学计算与人工智能学院三位教师联合组建，聚焦大模型时代的安全与可信，
+  围绕大模型安全与可信、大模型智能体与垂直领域应用、系统与网络安全三个方向开展研究：既研究大模型自身的检测、
+  推理可靠性与智能体安全，也研究系统与网络层面的攻击与防御，并把方法落到医疗、工程和公共安全等真实场景。
 intro_en: >-
   TrustAI Lab is a joint laboratory founded by three faculty members of the School of Computing and
-  Artificial Intelligence at Fuyao University of Science and Technology. We work on anonymous networks
-  and protocol security, safe and trustworthy large language models, and LLM agents with reliable AI for
-  vertical domains. The three lines meet at trustworthy LLMs and agents: attacks and defenses at the network
-  and system level, detection and reliable reasoning for the models themselves, and deployment in
-  healthcare, engineering and public-safety settings.
+  Artificial Intelligence at Fuyao University of Science and Technology. We focus on security and trust in
+  the era of large models, along three lines: LLM safety and trustworthiness, LLM agents and vertical-domain
+  applications, and system and network security. We study detection, reliable reasoning and agent safety for
+  the models themselves, as well as attacks and defenses at the system and network level, and bring the
+  methods into healthcare, engineering and public-safety settings.
 
 address_zh: 福建省福州高新技术产业开发区智慧大道 104 号，福耀科技大学计算与人工智能学院，邮编 350109
 address_en: School of Computing and AI, Fuyao University of Science and Technology, 104 Zhihui Avenue, Fuzhou High-tech Zone, Fuzhou, Fujian 350109, China

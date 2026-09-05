@@ -8,6 +8,7 @@
     <article class="area" id="{{ a.id }}">
       <div class="area-index">0{{ loop.index }}</div>
       <div class="area-body">
+        <img class="area-figure" src="{{ rel }}assets/img/research/{{ a.image }}" alt="" loading="lazy">
         <h2 class="area-title">{{ t(a, 'title') }}</h2>
         <div class="area-lead">{{ ui.lead_by }}{{ ui.colon }}<a href="people.html#{{ a._lead.id }}">{{ t(a._lead, 'name') }}</a></div>
         <p class="area-text">{{ t(a, 'summary') }}</p>
