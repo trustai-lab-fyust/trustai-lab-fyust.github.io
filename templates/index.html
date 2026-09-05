@@ -3,7 +3,6 @@
 {% block content %}
 <section class="hero">
   <div class="container">
-    <div class="hero-kicker">{{ t(site, 'affiliation') }}</div>
     <h1 class="hero-title">{{ t(site, 'name') }}</h1>
     {% if lang == 'zh' %}<div class="hero-en">{{ site.name_en }} · {{ site.short }}</div>{% else %}<div class="hero-en">{{ site.short }}</div>{% endif %}
     <p class="hero-tagline">{{ t(site, 'tagline') }}</p>
