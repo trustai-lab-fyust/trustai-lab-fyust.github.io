@@ -11,11 +11,17 @@
 <body>
 <nav class="site-nav">
   <div class="container nav-inner">
-    <a class="nav-brand" href="{{ rel }}{{ 'en/' if lang == 'en' else '' }}index.html">
-      <img src="{{ rel }}assets/img/logo.svg" alt="" width="30" height="30">
-      <span class="brand-short">{{ site.short }}</span>
-      <span class="brand-full">{{ t(site, 'name') }}</span>
-    </a>
+    <div class="nav-left">
+      <a class="school-link" href="{{ site.school_url }}" title="{{ ui.school_logo_alt }}"><img class="nav-school-logo" src="{{ rel }}{{ site.school_logo }}" alt="{{ ui.school_logo_alt }}"><img class="nav-school-badge" src="{{ rel }}assets/img/fyust-badge.png" alt="{{ ui.school_logo_alt }}"></a>
+      <span class="nav-divider" aria-hidden="true"></span>
+      <a class="nav-brand" href="{{ rel }}{{ 'en/' if lang == 'en' else '' }}index.html">
+        <img src="{{ rel }}assets/img/logo.svg" alt="" width="30" height="30">
+        <span class="brand-text">
+          <span class="brand-top">{{ site.name_zh if lang == 'zh' else site.short }}</span>
+          <span class="brand-sub">{{ site.name_en }}</span>
+        </span>
+      </a>
+    </div>
     <input type="checkbox" id="nav-toggle" class="nav-toggle" aria-label="menu">
     <label for="nav-toggle" class="nav-burger"><span></span><span></span><span></span></label>
     <ul class="nav-menu">

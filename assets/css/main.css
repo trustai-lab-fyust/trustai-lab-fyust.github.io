@@ -27,11 +27,18 @@ ul { margin: 0; padding: 0; list-style: none; }
 
 /* nav */
 .site-nav { position: sticky; top: 0; z-index: 50; background: rgba(255,255,255,.96); border-bottom: 1px solid var(--border); backdrop-filter: blur(6px); }
-.nav-inner { display: flex; align-items: center; justify-content: space-between; height: 60px; position: relative; }
-.nav-brand { display: flex; align-items: center; gap: .6rem; color: var(--primary); font-weight: 700; }
+.nav-inner { display: flex; align-items: center; justify-content: space-between; height: 64px; position: relative; gap: 1rem; }
+.nav-left { display: flex; align-items: center; gap: .85rem; min-width: 0; }
+.school-link { display: block; flex: none; }
+.nav-school-logo { height: 38px; width: auto; display: block; }
+.nav-school-badge { height: 32px; width: auto; display: none; }
+.nav-divider { width: 1px; height: 34px; background: var(--border); flex: none; }
+.nav-brand { display: flex; align-items: center; gap: .55rem; color: var(--primary); min-width: 0; }
 .nav-brand:hover { text-decoration: none; }
-.brand-short { font-size: 1.05rem; letter-spacing: .01em; }
-.brand-full { font-size: .8rem; font-weight: 500; color: var(--muted); padding-left: .6rem; border-left: 1px solid var(--border); }
+.nav-brand img { flex: none; }
+.brand-text { display: flex; flex-direction: column; line-height: 1.2; min-width: 0; }
+.brand-top { font-size: 1rem; font-weight: 700; color: var(--primary); white-space: nowrap; }
+.brand-sub { font-size: .66rem; font-weight: 500; color: var(--muted); white-space: nowrap; letter-spacing: .01em; }
 .nav-menu { display: flex; align-items: center; gap: .1rem; }
 .nav-menu a { display: block; padding: .35rem .7rem; border-radius: 4px; font-size: .9rem; font-weight: 500; color: var(--text-2); white-space: nowrap; }
 .nav-menu a:hover, .nav-menu a.active { color: var(--primary); background: var(--primary-light); text-decoration: none; }
@@ -39,9 +46,7 @@ ul { margin: 0; padding: 0; list-style: none; }
 .nav-toggle, .nav-burger { display: none; }
 
 /* hero */
-.school-logo-link { display: inline-block; margin-bottom: 1.1rem; }
-.school-logo { height: 52px; width: auto; }
-.hero { background: linear-gradient(180deg, var(--primary-light) 0%, #fff 100%); border-bottom: 1px solid var(--border); padding: 3.5rem 0 3rem; }
+.hero { background: linear-gradient(180deg, var(--primary-light) 0%, #fff 100%); border-bottom: 1px solid var(--border); padding: 3rem 0 2.6rem; }
 .hero-kicker { font-size: .85rem; color: var(--muted); letter-spacing: .04em; margin-bottom: .6rem; }
 .hero-title { font-size: 2.3rem; letter-spacing: .01em; }
 .hero-en { font-size: 1.05rem; color: var(--text-2); margin-top: .3rem; }
@@ -173,20 +178,28 @@ ul { margin: 0; padding: 0; list-style: none; }
   .people-grid { grid-template-columns: repeat(3, 1fr); }
   .two-col { grid-template-columns: 1fr; gap: 2rem; }
   .footer-grid { grid-template-columns: 1fr 1fr; }
-  .brand-full { display: none; }
+  .brand-sub { display: none; }
+  .nav-menu a { padding: .35rem .5rem; font-size: .86rem; }
+}
+@media (max-width: 960px) {
+  .nav-burger { display: flex; flex-direction: column; gap: 5px; cursor: pointer; padding: .4rem; }
+  .nav-burger span { display: block; width: 22px; height: 2px; background: var(--primary); }
+  .nav-menu { display: none; position: absolute; top: 64px; left: 0; right: 0; flex-direction: column; align-items: stretch; background: #fff; border-bottom: 1px solid var(--border); padding: .5rem 1rem 1rem; }
+  .nav-menu a { padding: .5rem .7rem; font-size: .95rem; }
+  .nav-toggle:checked ~ .nav-menu { display: flex; }
+  .nav-menu .lang-switch { margin-left: 0; margin-top: .4rem; width: max-content; }
 }
 @media (max-width: 640px) {
   body { font-size: 15px; }
   .cards-3, .people-grid, .offer-list, .footer-grid { grid-template-columns: 1fr; }
   .hero { padding: 2.4rem 0 2.2rem; }
   .hero-title { font-size: 1.7rem; }
-  .school-logo { height: 40px; }
+  .nav-school-logo { display: none; }
+  .nav-school-badge { display: block; }
+  .nav-divider { height: 26px; }
+  .nav-left { gap: .6rem; }
+  .brand-top { font-size: .92rem; }
   .person-lg { flex-direction: column; }
   .area { grid-template-columns: 1fr; }
   .cta-inner { flex-direction: column; align-items: flex-start; }
-  .nav-burger { display: flex; flex-direction: column; gap: 5px; cursor: pointer; padding: .4rem; }
-  .nav-burger span { display: block; width: 22px; height: 2px; background: var(--primary); }
-  .nav-menu { display: none; position: absolute; top: 60px; left: 0; right: 0; flex-direction: column; align-items: stretch; background: #fff; border-bottom: 1px solid var(--border); padding: .5rem 1rem 1rem; }
-  .nav-toggle:checked ~ .nav-menu { display: flex; }
-  .nav-menu .lang-switch { margin-left: 0; margin-top: .4rem; }
 }
