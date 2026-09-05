@@ -1,31 +1,40 @@
 # 加入我们。名额数字请以当年招生简章为准，这里不写具体数字。
-lead_zh: >-
-  实验室三位教师联合指导，长期招收博士生、硕士生、科研实习生与访问学生。
-  三个方向都欢迎申请：大模型安全与可信、大模型智能体与垂直领域应用、系统与网络安全。
+lead_zh: 实验室三位教师联合指导，长期招收博士生、硕士生、科研实习生与访问学生，三个研究方向都欢迎申请。
 lead_en: >-
-  The three faculty members co-supervise students and we are always looking for PhD students, master's students,
-  research interns and visiting students across our three lines: LLM safety and trustworthiness,
-  LLM agents and vertical-domain applications, and system and network security.
+  The three faculty members co-supervise students. We are always looking for PhD students, master's students,
+  research interns and visiting students, across all three research directions.
 
-offers_zh:
-  - 三位导师联合指导，安全与大模型两条线可以交叉选题。
-  - 真实问题与数据：面向公共安全部门的科研任务、医疗机构合作课题、已商业化落地的检测系统。
-  - 完整的学术训练：从选题、实验到顶会写作与评审。
-  - 论文按贡献署名。
-offers_en:
-  - Joint supervision by three faculty members; topics can span security and LLMs.
-  - "Real problems and data: public-safety research tasks, collaborations with hospitals, and a commercially deployed detection system."
-  - Full research training from problem selection and experiments to top-venue writing and reviewing.
-  - Authorship by contribution.
-
-# 算力与硬件（侯诚彬提供，2026-09-05）
-compute_zh: >-
-  团队能为科研与项目提供充裕的算力支撑，包含百卡 GPU 集群（单卡显存 ≥ 80G、单机显存和内存高达近 1.5T）等，
-  并支持有能力、有想法的同学开展具身智能等研究。
-compute_en: >-
-  The team provides ample compute for research and projects, including a GPU cluster of over one hundred
-  cards (at least 80 GB of memory per card, and up to nearly 1.5 TB of GPU memory plus RAM per node), and
-  supports capable, motivated students in pursuing research such as embodied AI.
+# 首屏下方的四个色块，按顺序显示。想改内容或增减，直接改这里。
+offers:
+  - title_zh: 算力与硬件
+    title_en: Compute and hardware
+    text_zh: >-
+      团队能为科研与项目提供充裕的算力支撑，包含百卡 GPU 集群（单卡显存 ≥ 80G、单机显存和内存高达近 1.5T）等，
+      并支持有能力、有想法的同学开展具身智能等研究。
+    text_en: >-
+      Ample compute for research and projects, including a GPU cluster of over one hundred cards (at least 80 GB
+      per card, and up to nearly 1.5 TB of GPU memory plus RAM per node), supporting work such as embodied AI.
+  - title_zh: 三位导师联合指导
+    title_en: Joint supervision
+    text_zh: >-
+      安全与大模型两条线可以交叉选题，学生按兴趣选择方向，也可以同时接受两位导师指导。
+    text_en: >-
+      Topics can span the security and large-model lines; students choose their direction and may be
+      co-supervised by two faculty members.
+  - title_zh: 真实问题与数据
+    title_en: Real problems and data
+    text_zh: >-
+      面向公共安全部门的科研任务、医疗机构合作课题，以及已经商业化落地的检测系统，课题来自真实需求而非练习题。
+    text_en: >-
+      Research tasks for public-safety agencies, collaborations with hospitals, and a commercially deployed
+      detection system: problems come from real needs, not exercises.
+  - title_zh: 完整的学术训练
+    title_en: Full research training
+    text_zh: >-
+      从选题、实验到顶会写作与评审，全流程带着做；论文按实际贡献署名。
+    text_en: >-
+      End-to-end training from problem selection and experiments to top-venue writing and reviewing;
+      authorship follows actual contribution.
 
 sections:
   - id: phd

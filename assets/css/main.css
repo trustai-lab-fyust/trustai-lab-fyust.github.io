@@ -141,8 +141,6 @@ ul { margin: 0; padding: 0; list-style: none; }
 .pub-venue { color: var(--text-2); font-weight: 500; }
 .pub-link { font-size: .82rem; border: 1px solid var(--border); border-radius: 4px; padding: 0 .45rem; }
 .person-note { margin-top: .3rem; }
-.compute-box { margin: 0 0 1.6rem; background: var(--primary-light); border: 1px solid var(--border); border-radius: 8px; padding: 1.1rem 1.4rem; }
-.compute-box p { margin: 0; color: var(--text-2); }
 .year-title { font-size: 1.2rem; margin: 1.2rem 0 .9rem; color: var(--accent); }
 
 /* news */
@@ -153,9 +151,10 @@ ul { margin: 0; padding: 0; list-style: none; }
 .news-list-page .news-item { padding: .6rem 0; border-bottom: 1px solid var(--border); }
 
 /* join */
-.offer-list { margin: 1.2rem 0 2rem; display: grid; grid-template-columns: repeat(2, 1fr); gap: .7rem 1.5rem; }
-.offer-list li { position: relative; padding-left: 1.3rem; color: var(--text-2); font-size: .95rem; }
-.offer-list li::before { content: ""; position: absolute; left: 0; top: .6rem; width: 8px; height: 8px; border-radius: 50%; background: var(--accent); }
+.offer-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 1.1rem; align-items: stretch; margin: 1.4rem 0 2rem; }
+.offer-box { background: var(--primary-light); border: 1px solid #dbe6f1; border-radius: 8px; padding: 1.1rem 1.3rem 1.2rem; }
+.offer-title { font-weight: 700; color: var(--primary); font-size: 1.02rem; margin-bottom: .45rem; }
+.offer-text { font-size: .9rem; color: var(--text-2); margin: 0; }
 .join-section { padding: 1.3rem 0; border-top: 1px solid var(--border); }
 .join-title { font-size: 1.15rem; margin-bottom: .6rem; }
 .join-body li { position: relative; padding-left: 1.1rem; color: var(--text-2); margin-bottom: .35rem; font-size: .95rem; }
@@ -204,7 +203,7 @@ ul { margin: 0; padding: 0; list-style: none; }
 }
 @media (max-width: 640px) {
   body { font-size: 15px; }
-  .cards-3, .offer-list, .footer-grid { grid-template-columns: 1fr; }
+  .cards-3, .offer-grid, .footer-grid { grid-template-columns: 1fr; }
   .name-grid { grid-template-columns: repeat(2, 1fr); }
   .hero { padding: 2.4rem 0 2.2rem; }
   .hero-title { font-size: 1.7rem; }

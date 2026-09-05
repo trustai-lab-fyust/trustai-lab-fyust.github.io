@@ -5,15 +5,14 @@
 <section class="section">
   <div class="container">
     <p class="lead">{{ t(join, 'lead') }}</p>
-    <ul class="offer-list">
-      {% for o in t(join, 'offers') %}<li>{{ o }}</li>{% endfor %}
-    </ul>
-    {% if join.compute_zh or join.compute_en %}
-    <div class="compute-box">
-      <h2 class="join-title">{{ ui.compute_title }}</h2>
-      <p>{{ t(join, 'compute') }}</p>
+    <div class="offer-grid">
+      {% for o in join.offers %}
+      <div class="offer-box">
+        <div class="offer-title">{{ t(o, 'title') }}</div>
+        <p class="offer-text">{{ t(o, 'text') }}</p>
+      </div>
+      {% endfor %}
     </div>
-    {% endif %}
     {% for s in join.sections %}
     <article class="join-section" id="{{ s.id }}">
       <h2 class="join-title">{{ t(s, 'title') }}</h2>

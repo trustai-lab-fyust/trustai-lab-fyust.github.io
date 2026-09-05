@@ -190,3 +190,14 @@ def test_hero_tagline(dist):
         html = read(dist, rel)
         assert data["site"][f"tagline_{lang}"] in html, rel
     assert "hero-mission" not in read(dist, "index.html")
+
+
+def test_join_offer_blocks(dist):
+    data = build.load_data(ROOT)
+    assert len(data["join"]["offers"]) == 4
+    for rel, lang in [("join.html", "zh"), ("en/join.html", "en")]:
+        html = read(dist, rel)
+        assert html.count('class="offer-box"') == 4, rel
+        for offer in data["join"]["offers"]:
+            assert offer[f"title_{lang}"] in html, (rel, offer["title_zh"])
+    assert "compute-box" not in read(dist, "join.html")
