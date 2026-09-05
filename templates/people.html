@@ -20,7 +20,7 @@
           {% if area %}<div class="faculty-area">{{ t(area, 'title') }}</div>{% endif %}
           <p class="faculty-bio">{{ t(p, 'bio') }}</p>
           <div class="faculty-links">
-            {% if p.email %}<a href="mailto:{{ p.email }}">{{ p.email }}</a>{% endif %}
+            {% if p.email %}<a href="mailto:{{ p.email }}" title="{{ p.email }}">{{ ui.email }}</a>{% endif %}
             {% if p.homepage %}<a href="{{ p.homepage }}">{{ ui.homepage }}</a>{% endif %}
             {% for l in p.links or [] %}<a href="{{ l.url }}">{{ l.label_en if (lang == 'en' and l.label_en) else l.label }}</a>{% endfor %}
           </div>

@@ -97,7 +97,7 @@ ui:
     recruiting: 招收中
     recruiting_note: 该层级虚位以待，欢迎申请。
     email: 邮箱
-    homepage: 个人主页
+    homepage: 主页
     address: 地址
     contact: 联系我们
     quick_links: 快捷访问
@@ -108,6 +108,7 @@ ui:
     type_conference: 会议
     type_journal: 期刊
     faculty_page: 学院主页
+    scholar: Scholar
     corresponding_note: "* 通讯作者"
     compute_title: 算力与硬件
     school_logo_alt: 福耀科技大学
@@ -139,6 +140,7 @@ ui:
     type_conference: Conference
     type_journal: Journal
     faculty_page: Faculty page
+    scholar: Scholar
     corresponding_note: "* Corresponding author"
     compute_title: Compute and Hardware
     school_logo_alt: Fuyao University of Science and Technology

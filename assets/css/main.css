@@ -104,8 +104,8 @@ ul { margin: 0; padding: 0; list-style: none; }
 .faculty-name { font-weight: 700; color: var(--primary); font-size: 1.1rem; text-align: center; }
 .faculty-title { font-size: .88rem; color: var(--text-2); text-align: center; margin-top: .1rem; }
 .faculty-area { font-size: .84rem; color: var(--muted); text-align: center; margin-top: .3rem; padding-top: .5rem; border-top: 1px solid var(--border); }
-.faculty-bio { font-size: .88rem; color: var(--text-2); margin: .8rem 0 1rem; flex: 1; }
-.faculty-links { display: flex; flex-wrap: wrap; gap: .3rem .8rem; font-size: .83rem; padding-top: .7rem; border-top: 1px solid var(--border); }
+.faculty-bio { font-size: .88rem; color: var(--text-2); margin: .8rem 0 1rem; flex: 1; text-align: justify; text-justify: inter-ideograph; }
+.faculty-links { display: flex; flex-wrap: wrap; gap: .35rem .85rem; font-size: .84rem; padding-top: .75rem; border-top: 1px solid var(--border); justify-content: center; }
 
 /* students: name only, uniform height */
 .name-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: .9rem; align-items: stretch; margin-bottom: 2.4rem; }

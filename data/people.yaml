@@ -28,10 +28,10 @@
   links:
     - label: GitHub
       url: https://github.com/baoguangsheng
-    - label: Google Scholar
+    - label: Scholar
       url: https://scholar.google.com/citations?user=cxPJx2kAAAAJ
-    - label: 学院主页
-      label_en: Faculty page
+    - label: 学院
+      label_en: Faculty
       url: https://cs.fyust.edu.cn/szdw/jsdw/bgs.htm
   photo: bao.jpg
   bio_zh: >-
@@ -58,7 +58,7 @@
       url: https://github.com/houchengbin
     - label: ORCID
       url: https://orcid.org/0000-0001-6648-793X
-    - label: Google Scholar
+    - label: Scholar
       url: https://scholar.google.com/citations?user=gTjReaQAAAAJ
   photo: hou.jpg
   bio_zh: >-
