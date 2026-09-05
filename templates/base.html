@@ -48,6 +48,12 @@
       <div class="footer-title">{{ ui.contact }}</div>
       <div class="footer-line">{{ t(site, 'address') }}</div>
     </div>
+    <div>
+      <div class="footer-title">{{ ui.quick_links }}</div>
+      <ul class="footer-links">
+        {% for l in site.footer_links %}<li><a href="{{ l.url }}">{{ l[lang] }}</a></li>{% endfor %}
+      </ul>
+    </div>
   </div>
   <div class="container footer-bottom">© {{ year }} {{ ui.copyright }}</div>
 </footer>

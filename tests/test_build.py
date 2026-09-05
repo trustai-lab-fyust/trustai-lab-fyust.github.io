@@ -165,3 +165,14 @@ def test_research_images_exist(dist):
         assert (dist / "assets/img/research" / area["image"]).is_file(), area["id"]
     zh = read(dist, "index.html")
     assert "匿名网络" not in zh
+
+
+def test_footer_quick_links(dist):
+    data = build.load_data(ROOT)
+    for rel, lang in [("index.html", "zh"), ("en/index.html", "en")]:
+        html = read(dist, rel)
+        footer = html[html.index("<footer"):]
+        assert data["site"]["ui"][lang]["quick_links"] in footer, rel
+        for link in data["site"]["footer_links"]:
+            assert link["url"] in footer, (rel, link["url"])
+            assert link[lang] in footer, (rel, link[lang])

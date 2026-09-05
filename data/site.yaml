@@ -29,6 +29,15 @@ address_en: School of Computing and AI, Fuyao University of Science and Technolo
 contact_email: chunmianwang@fyust.edu.cn
 github: https://github.com/trustai-lab-fyust
 
+# 页脚"快捷访问"里的外部链接，想加减直接改这里
+footer_links:
+  - url: https://www.fyust.edu.cn/
+    zh: 福耀科技大学
+    en: Fuyao University of Science and Technology
+  - url: https://cs.fyust.edu.cn/
+    zh: 计算与人工智能学院
+    en: School of Computing and AI
+
 # 成员层级，按页面显示顺序
 tiers:
   - id: faculty
@@ -91,7 +100,7 @@ ui:
     homepage: 个人主页
     address: 地址
     contact: 联系我们
-    quick_links: 快捷链接
+    quick_links: 快捷访问
     lang_switch: English
     lang_switch_file: en/index.html
     copyright: 安全可信智能联合实验室
@@ -122,7 +131,7 @@ ui:
     homepage: Homepage
     address: Address
     contact: Contact
-    quick_links: Links
+    quick_links: Quick Links
     lang_switch: 中文
     lang_switch_file: ../index.html
     copyright: Joint Laboratory of Trustworthy and Secure Intelligence
