@@ -32,24 +32,6 @@
 </section>
 
 <section class="section section-alt">
-  <div class="container">
-    <h2 class="section-title">{{ tiers[0][lang] }}</h2>
-    <div class="cards cards-3">
-      {% for p in people_by_tier['faculty'] %}
-      <div class="card person-mini">
-        <img class="person-img" src="{{ rel }}{{ p._img }}" alt="{{ t(p, 'name') }}" width="160" height="160">
-        <div class="person-name">{{ t(p, 'name') }}</div>
-        <div class="person-title">{{ t(p, 'title') }}</div>
-        {% set area = (research | selectattr('id', 'equalto', p.direction) | list | first) %}
-        {% if area %}<div class="person-area">{{ t(area, 'title') }}</div>{% endif %}
-        <div class="person-links"><a href="people.html#{{ p.id }}">{{ ui.more }}</a></div>
-      </div>
-      {% endfor %}
-    </div>
-  </div>
-</section>
-
-<section class="section">
   <div class="container two-col">
     <div>
       <h2 class="section-title">{{ ui.selected_pubs }}</h2>
