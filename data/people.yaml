@@ -20,8 +20,8 @@
   tier: faculty
   name_zh: 鲍光胜
   name_en: Guangsheng Bao
-  title_zh: 博士
-  title_en: Ph.D.
+  title_zh: 助理教授
+  title_en: Assistant Professor
   direction: trustworthy-llm
   email: baoguangsheng@fyust.edu.cn
   homepage: https://baoguangsheng.github.io/
@@ -48,8 +48,8 @@
   tier: faculty
   name_zh: 侯诚彬
   name_en: Chengbin Hou
-  title_zh: 博士
-  title_en: Ph.D.
+  title_zh: 助理教授
+  title_en: Assistant Professor
   direction: llm-agent-vertical
   email: houcb@fyust.edu.cn
   homepage: https://cs.fyust.edu.cn/szdw/jsdw/hcb.htm
@@ -74,8 +74,8 @@
   tier: faculty
   name_zh: 王春棉
   name_en: Chunmian Wang
-  title_zh: 博士
-  title_en: Ph.D.
+  title_zh: 助理教授
+  title_en: Assistant Professor
   direction: sys-net-sec
   email: chunmianwang@fyust.edu.cn
   homepage: https://cs.fyust.edu.cn/szdw/jsdw/wcm.htm
