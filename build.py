@@ -109,6 +109,8 @@ def build(root, out):
     for p in people:
         if p.get("photo"):
             p["_img"] = f"assets/img/people/{p['photo']}"
+        elif p["tier"] != "faculty":
+            p["_img"] = None  # students are listed by name only
         else:
             parts = p["name_en"].split()
             initials = (parts[0][0] + parts[-1][0]).upper() if len(parts) >= 2 else parts[0][:2].upper()

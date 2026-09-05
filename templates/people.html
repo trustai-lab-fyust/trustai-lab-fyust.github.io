@@ -10,12 +10,34 @@
     <h2 class="tier-title" id="tier-{{ tier.id }}">{{ tier[lang] }}</h2>
     {% if members %}
       {% if tier.id == 'faculty' %}
-      <div class="people-list">
-        {% for p in members %}<div id="{{ p.id }}">{% with size='lg' %}{% include "_person.html" %}{% endwith %}</div>{% endfor %}
+      <div class="faculty-grid">
+        {% for p in members %}
+        <div class="faculty-card" id="{{ p.id }}">
+          <img class="faculty-img" src="{{ rel }}{{ p._img }}" alt="{{ t(p, 'name') }}" width="160" height="160">
+          <div class="faculty-name">{{ t(p, 'name') }}{% if lang == 'zh' %} <span class="person-alt">{{ p.name_en }}</span>{% endif %}</div>
+          <div class="faculty-title">{{ t(p, 'title') }}</div>
+          {% set area = (research | selectattr('id', 'equalto', p.direction) | list | first) %}
+          {% if area %}<div class="faculty-area">{{ t(area, 'title') }}</div>{% endif %}
+          <p class="faculty-bio">{{ t(p, 'bio') }}</p>
+          <div class="faculty-links">
+            {% if p.email %}<a href="mailto:{{ p.email }}">{{ p.email }}</a>{% endif %}
+            {% if p.homepage %}<a href="{{ p.homepage }}">{{ ui.homepage }}</a>{% endif %}
+            {% for l in p.links or [] %}<a href="{{ l.url }}">{{ l.label_en if (lang == 'en' and l.label_en) else l.label }}</a>{% endfor %}
+          </div>
+        </div>
+        {% endfor %}
       </div>
       {% else %}
-      <div class="people-grid">
-        {% for p in members %}<div id="{{ p.id }}">{% with size='sm' %}{% include "_person.html" %}{% endwith %}</div>{% endfor %}
+      <div class="name-grid">
+        {% for p in members %}
+        <div class="name-card" id="{{ p.id }}">
+          <div class="name-main">{{ t(p, 'name') }}</div>
+          <div class="name-alt">{{ p.name_en }}</div>
+          <div class="name-meta">
+            {% if p.affiliation_zh or p.affiliation_en %}{{ t(p, 'affiliation') }}{% elif p.note_zh or p.note_en %}{{ t(p, 'note') }}{% endif %}
+          </div>
+        </div>
+        {% endfor %}
       </div>
       {% endif %}
     {% else %}

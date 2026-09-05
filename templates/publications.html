@@ -4,7 +4,6 @@
 <section class="page-head"><div class="container"><h1>{{ nav | selectattr('id', 'equalto', 'publications') | map(attribute=lang) | first }}</h1></div></section>
 <section class="section">
   <div class="container">
-    {% if has_corresponding %}<p class="pub-legend">{{ ui.corresponding_note }}</p>{% endif %}
     {% for year, group in pubs | groupby('year') | sort(reverse=true) %}
     <h2 class="year-title">{{ year }}</h2>
     <ul class="pub-list">

@@ -105,11 +105,17 @@ def test_school_logo_on_home(dist):
     assert "assets/img/fyust-logo.png" in read(dist, "en/index.html")
 
 
-def test_corresponding_author_legend(dist):
+def test_corresponding_author_marks_without_legend(dist):
+    """Asterisks stay in the author lists; the explanatory legend line is not shown."""
     data = build.load_data(ROOT)
-    if any("*" in p["authors"] for p in data["publications"]):
-        assert "* 通讯作者" in read(dist, "publications.html")
-        assert "* Corresponding author" in read(dist, "en/publications.html")
+    starred = [p for p in data["publications"] if "*" in p["authors"]]
+    assert starred
+    for rel in ["publications.html", "en/publications.html", "research.html"]:
+        html = read(dist, rel)
+        assert "pub-legend" not in html, rel
+        assert "通讯作者" not in html, rel
+        assert "Corresponding author" not in html, rel
+    assert "<strong>C. Hou</strong>*" in read(dist, "publications.html")
 
 
 def test_publications_sorted_desc(dist):
