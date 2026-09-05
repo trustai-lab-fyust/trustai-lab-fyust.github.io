@@ -82,7 +82,6 @@ ul { margin: 0; padding: 0; list-style: none; }
 .card-foot { font-size: .82rem; color: var(--muted); }
 
 /* research cards with figures (home) */
-.areas-title { margin-top: 2rem; }
 .areas-home { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.4rem; }
 .area-card { display: flex; flex-direction: column; border: 1px solid var(--border); border-radius: 10px; overflow: hidden; background: #fff; color: inherit; transition: border-color .15s, box-shadow .15s; }
 .area-card:hover { text-decoration: none; color: inherit; border-color: var(--primary-2); box-shadow: 0 6px 18px rgba(31,78,121,.09); }

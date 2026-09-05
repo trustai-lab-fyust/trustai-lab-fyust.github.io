@@ -11,7 +11,7 @@ school_logo: assets/img/fyust-logo.png
 tagline_zh: 面向大模型时代的安全与可信
 tagline_en: Security and trust for the era of large models
 
-# 首页一段话
+# 首页曾用的一段简介，现在首页不显示；想恢复的话在 templates/index.html 里加回 site.intro
 intro_zh: >-
   安全可信智能联合实验室由福耀科技大学计算与人工智能学院三位教师联合组建，聚焦大模型时代的安全与可信，
   围绕大模型安全与可信、大模型智能体与垂直领域应用、系统与网络安全三个方向开展研究：既研究大模型自身的检测、
