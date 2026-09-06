@@ -12,7 +12,7 @@
   --dark: #0f1e2e;
   --font: -apple-system, BlinkMacSystemFont, "Segoe UI", "Helvetica Neue", Arial, "PingFang SC",
           "Hiragino Sans GB", "Microsoft YaHei", "Noto Sans CJK SC", "Source Han Sans SC", sans-serif;
-  --w: 1040px;
+  --w: 1200px;
 }
 *, *::before, *::after { box-sizing: border-box; }
 html { -webkit-text-size-adjust: 100%; }
@@ -154,8 +154,8 @@ ul { margin: 0; padding: 0; list-style: none; }
 .compute-box { background: var(--primary-light); border: 1px solid #d3e0ee; border-left: 5px solid var(--primary); border-radius: 8px; padding: 1.2rem 1.5rem 1.3rem; margin: 1.5rem 0 1.1rem; }
 .compute-title { font-weight: 700; color: var(--primary); font-size: 1.12rem; margin-bottom: .5rem; }
 .compute-text { font-size: .95rem; color: var(--text-2); margin: 0; }
-.offer-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 1rem; align-items: stretch; margin: 0 0 2rem; }
-.offer-box { background: #fff; border: 1px solid var(--border); border-radius: 8px; padding: 1rem 1.1rem 1.1rem; border-top: 3px solid var(--accent); }
+.offer-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 1rem; align-items: stretch; margin: 0 0 2.2rem; }
+.offer-box { background: #f2f6fa; border: 1px solid #cfdcea; border-radius: 8px; padding: 1rem 1.1rem 1.1rem; border-top: 4px solid var(--accent); }
 .offer-title { font-weight: 700; color: var(--primary); font-size: .96rem; margin-bottom: .4rem; }
 .offer-text { font-size: .87rem; color: var(--text-2); margin: 0; }
 .join-section { padding: 1.3rem 0; border-top: 1px solid var(--border); }
