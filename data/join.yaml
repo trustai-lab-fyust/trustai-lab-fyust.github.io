@@ -1,32 +1,32 @@
 # 加入我们。名额数字请以当年招生简章为准，这里不写具体数字。
-lead_zh: 实验室三位教师联合指导，长期招收博士生、硕士生、科研实习生与访问学生，三个研究方向都欢迎申请。
+lead_zh: 实验室长期招收博士生、硕士生、科研实习生与访问学生，三个研究方向都欢迎申请。
 lead_en: >-
-  The three faculty members co-supervise students. We are always looking for PhD students, master's students,
-  research interns and visiting students, across all three research directions.
+  We recruit PhD students, master's students, research interns, and visiting students, and applications 
+  in all three research directions are welcome.
 
 # 突出的算力色块，单独一块放在最上面
 compute_title_zh: 算力与硬件
 compute_title_en: Compute and Hardware
 compute_zh: >-
   团队能为科研与项目提供充裕的算力支撑，包含百卡 GPU 集群（单卡显存 ≥ 80G、单机显存和内存高达近 1.5T）等，
-  并支持有能力、有想法的同学开展具身智能等研究。
+  并支持有能力和有想法的同学开展世界模型、具身智能、机器人等研究。
 compute_en: >-
-  The team provides ample compute for research and projects, including a GPU cluster of over one hundred cards
-  (at least 80 GB of memory per card, and up to nearly 1.5 TB of GPU memory plus RAM per node), and supports
-  capable, motivated students in pursuing research such as embodied AI.
+  We provides ample computational support for research and projects, including a GPU cluster of over one hundred cards
+  (with at least 80 GB of memory per card and up to nearly 1.5 TB of GPU memory plus RAM per node),
+  and supports capable and motivated students to pursue research in world models, embodied AI, robotics, and more.
 
 # 算力色块下面的四张卡片
 offers:
-  - title_zh: 三位导师联合指导
-    title_en: Joint supervision
-    text_zh: 安全与大模型两条线可以交叉选题。
-    text_en: Topics can span the security and large-model lines.
+  - title_zh: 三位导师均可独立指导或联合指导
+    title_en: Independent or joint supervision
+    text_zh: 大模型与安全两条线可以交叉选题。
+    text_en: Topics can span across the large-model and security tracks.
   - title_zh: 真实问题与数据
     title_en: Real problems and data
     text_zh: 面向公共安全部门的科研任务、医疗机构合作课题、已商业化落地的检测系统。
     text_en: Research tasks for public-safety agencies, hospital collaborations, and a commercially deployed detection system.
   - title_zh: 完整的学术训练
-    title_en: Full research training
+    title_en: Research training
     text_zh: 从选题、实验到顶会写作与评审。
     text_en: From problem selection and experiments to top-venue writing and reviewing.
   - title_zh: 按贡献署名
@@ -39,24 +39,24 @@ sections:
     title_zh: 博士生
     title_en: PhD students
     body_zh:
-      - 招收计算机、网络空间安全、人工智能及相关专业的申请者，名额以学校当年研究生招生简章为准。
-      - 安全方向需要扎实的系统与网络基础和较强的工程能力；大模型方向需要机器学习或自然语言处理基础。有论文、竞赛或开源项目经历者优先。
-      - 申请材料：简历、成绩单、代表性论文或项目、一页研究设想。邮件主题请写“博士申请-姓名-院校-意向方向”。
+      - 招收计算机、人工智能、网络空间安全及相关专业的申请者，名额以学校当年研究生招生简章为准。
+      - 大模型方向需要机器学习和编程基础；安全方向需要扎实的系统与网络基础和较强的工程能力。有论文、竞赛或开源项目经历者优先。
+      - 申请材料：简历、成绩单、代表性论文或项目、一页研究设想。邮件主题请写“博士/硕士申请-姓名-院校-意向方向”。
     body_en:
-      - Applicants from computer science, cybersecurity, AI and related fields. Quotas follow the university's annual admission guide.
-      - The security line expects solid systems and networking foundations and strong engineering skills; the LLM line expects a machine learning or NLP background. Publications, competitions or open-source work are a plus.
-      - "Materials: CV, transcript, representative papers or projects, and a one-page research statement. Email subject: PhD application - name - university - intended line."
+      - Applicants from computer science, artificial intelligence, cybersecurity, and related fields are welcome. Quotas are subject to the university's annual graduate admission brochure.
+      - The large-model track requires a foundation in machine learning and programming; the security track requires solid systems and networking foundations and strong engineering skills. Previous publications, competitions, or open-source project experience are preferred.
+      - "Materials: CV, transcript, representative papers or projects, and a one-page research proposal. Email subject: PhD/Master application - Name - University - Intended track."
   - id: master
     title_zh: 硕士生
     title_en: Master's students
     body_zh:
       - 招收学术型与专业型硕士，名额以学校当年研究生招生简章为准。
       - 要求良好的编程与数学基础，对安全或大模型方向有明确兴趣。
-      - 申请材料：简历、成绩单、项目或竞赛经历。邮件主题请写“硕士申请-姓名-院校-意向方向”。
+      - 申请材料：简历、成绩单、项目或竞赛经历。邮件主题请写“博士/硕士申请-姓名-院校-意向方向”。
     body_en:
-      - Academic and professional master's students. Quotas follow the university's annual admission guide.
-      - Good programming and mathematics foundations and a clear interest in security or LLMs.
-      - "Materials: CV, transcript, project or competition experience. Email subject: Master application - name - university - intended line."
+      - We recruit both academic and professional master's students. Quotas are subject to the university's annual graduate admission brochure.
+      - Good programming and mathematics foundations and a clear interest in either security or large-model tracks are required.
+      - "Materials: CV, transcript, project or competition experience. Email subject: PhD/Master application - Name - University - Intended track."
   - id: intern
     title_zh: 本科生与实习生
     title_en: Undergraduates and interns
@@ -65,16 +65,16 @@ sections:
       - 参与真实课题，按贡献署名；表现优秀者优先推荐攻读研究生。
       - 申请材料：简历、成绩单、可用时间。邮件主题请写“实习申请-姓名-院校-年级”。
     body_en:
-      - Undergraduates from any university are welcome; we suggest a commitment of six months or longer, remote is possible.
-      - Work on real projects with authorship by contribution; strong interns are recommended for graduate admission.
-      - "Materials: CV, transcript, availability. Email subject: Internship application - name - university - year."
+      - Undergraduates from inside or outside the university are welcome to participate in research training; a commitment of at least 6 months is recommended, and remote participation is possible.
+      - Participate in real projects and receive authorship based on contribution; outstanding performers will be given priority for recommendation to graduate studies.
+      - "Materials: CV, transcript, and available time. Email subject: Internship application - Name - University - Year."
   - id: visiting
     title_zh: 访问学生与合作
     title_en: Visiting students and collaboration
     body_zh:
-      - 欢迎联合培养、访问研究和企业合作，请直接邮件联系对应方向的教师。
+      - 欢迎联合培养、访问研究和企业合作，请邮件联系我们。
     body_en:
-      - Joint training, visiting research and industry collaboration are welcome. Please email the faculty member of the relevant line.
+      - Joint training, visiting research, and industry collaboration are welcome. Please contact us via email.
 
 contact_zh: 申请请发邮件至对应方向的教师，或发至实验室联系邮箱。
-contact_en: Send applications to the faculty member of the relevant line, or to the lab contact email.
+contact_en: Please send applications via email to the faculty member in the corresponding track, or to the lab's contact email address.
