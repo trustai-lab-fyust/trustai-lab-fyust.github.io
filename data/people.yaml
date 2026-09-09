@@ -54,8 +54,6 @@
   email: houcb@fyust.edu.cn
   homepage: https://cs.fyust.edu.cn/szdw/jsdw/hcb.htm
   links:
-    - label: GitHub
-      url: https://github.com/houchengbin
     - label: ORCID
       url: https://orcid.org/0000-0001-6648-793X
     - label: Scholar
@@ -64,11 +62,11 @@
   bio_zh: >-
     2022 年获英国伯明翰大学计算机科学博士学位，曾在华为、腾讯 AI Lab 实习与工作，2024 年 2 月加入福耀科技大学。
     主要研究大模型与智能体、深度学习及 AI 技术在垂直领域应用，在 TPAMI、TNNLS、TKDE、AAAI、IJCAI 等发表论文二十余篇，
-    主持国家自然科学基金青年项目、福建省自然科学基金项目等。获福建省高层次人才 C 类、河南省医学科技一等奖、IET Prize。
+    主持国家、省市及横向科研项目多项。获福建省高层次人才 C 类、河南省医学科技一等奖、IET Prize等。
   bio_en: >-
     PhD in Computer Science from the University of Birmingham (2022); previously with Huawei and Tencent AI Lab;
     joined FYUST in February 2024. Works on LLMs and agents, deep learning, and AI for vertical domains, with 20+
-    papers in TPAMI, TNNLS, TKDE, AAAI and IJCAI. PI of an NSFC Young Scientists project and a Fujian NSF project.
+    papers in TPAMI, TNNLS, TKDE, AAAI, IJCAI etc. PI of the NSFC Young Scientists project, Fujian NSF project, etc.
 
 - id: wang
   tier: faculty
