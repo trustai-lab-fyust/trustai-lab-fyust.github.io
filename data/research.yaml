@@ -19,22 +19,22 @@
   highlights: [iclr2025, iclr2024, tacl2026, emnlp2025, coling2025]
 
 - id: llm-agent-vertical
-  title_zh: 大模型智能体与垂直领域应用
+  title_zh: 大模型与智能体及垂直领域应用
   title_en: LLM Agents and Vertical-Domain Applications
   lead: hou
   image: llm-agent-vertical.jpg
   keywords_zh: [大模型与智能体, 知识图谱与图神经网络, 可信约束推理, 医疗与工程应用]
-  keywords_en: [LLMs and agents, Knowledge graphs and graph neural networks, Constrained and trustworthy reasoning, Healthcare and engineering applications]
+  keywords_en: [LLMs and agents, Knowledge graphs and graph neural networks, Trustworthy reasoning, Healthcare and engineering applications]
   summary_zh: >-
-    研究大模型与智能体在医疗诊疗、工程等垂直领域中的可靠约束推理、知识引导与可解释，
-    以及图学习与知识图谱方法，推动可信 AI 在真实业务中落地。主持国家自然科学基金青年项目
-    “面向异构超声报告审核的大模型可信推理方法研究”，成果发表于 TPAMI、TNNLS、TKDE、AAAI、IJCAI。
+    研究大模型与智能体及在医疗、工程等垂直领域中的可靠约束推理、知识引导与可解释，
+    以及图学习与知识图谱方法，推动可信 AI 在真实业务中落地。主持国家、省市及横向科研项目多项，
+    成果发表于 TPAMI、TNNLS、TKDE、AAAI、IJCAI。
   summary_en: >-
     We study reliable, constrained and explainable reasoning of LLMs and agents in vertical domains such as
-    clinical diagnosis and engineering, together with graph learning and knowledge-graph methods, to bring
-    trustworthy AI into real workflows. The lead is PI of an NSFC Young Scientists project on trustworthy LLM
-    reasoning for ultrasound report auditing; results appear in TPAMI, TNNLS, TKDE, AAAI and IJCAI.
-  highlights: [tpami2025, tnnls2024, kbs2025a, tkde2022, ijcai2021]
+    healthcare and engineering, together with graph learning and knowledge-graph methods, to bring
+    trustworthy AI into real workflows. The lead is PI of an NSFC Young Scientists project and several other projects; 
+    results appear in TPAMI, TNNLS, TKDE, AAAI and IJCAI.
+  highlights: [tpami2026, tr2026, kbs2025a, tnnls2024, tkde2022]
 
 - id: sys-net-sec
   title_zh: 系统与网络安全
