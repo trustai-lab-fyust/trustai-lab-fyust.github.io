@@ -66,6 +66,26 @@
   direction: trustworthy-llm
   status: accepted
   links: []
+- id: tr2026
+  year: 2026
+  authors: C. Hou, Y. Song, J. Song, C. Chu, X. Fei, J. Li, H. Lv
+  title: "KGC-Explainer: Towards Explainable Knowledge Graph Completion"
+  venue: IEEE TRel 2026
+  venue_full: IEEE Transactions on Reliability
+  type: journal
+  rank: JCR-Q1
+  direction: llm-agent-vertical
+  links: []
+- id: tpami2026
+  year: 2025
+  authors: W. Mao, C. Hou*, T. Zhang, X. Lin, K. Tang, H. Lv*
+  title: "Parse Trees Guided LLM Prompt Compression"
+  venue: IEEE TPAMI 2026
+  venue_full: IEEE Transactions on Pattern Analysis and Machine Intelligence
+  type: journal
+  rank: CCF-A, JCR-Q1, IF=20.4
+  direction: llm-agent-vertical
+  links: []
 - id: www2025
   year: 2025
   authors: Yixuan Yao, Ming Yang, Zixia Liu, Kai Dong, Xiaodan Gu, Chunmian Wang
@@ -106,16 +126,6 @@
   rank: CCF-B
   direction: trustworthy-llm
   links: []
-- id: tpami2025
-  year: 2025
-  authors: W. Mao, C. Hou*, T. Zhang, X. Lin, K. Tang, H. Lv*
-  title: "Parse Trees Guided LLM Prompt Compression"
-  venue: IEEE TPAMI 2025
-  venue_full: IEEE Transactions on Pattern Analysis and Machine Intelligence
-  type: journal
-  rank: CCF-A
-  direction: llm-agent-vertical
-  links: []
 - id: kbs2025a
   year: 2025
   authors: X. Lin, T. Zhang, C. Hou*, J. Wang, J. Xue, H. Lv
@@ -123,7 +133,7 @@
   venue: Knowledge-Based Systems 2025
   venue_full: Knowledge-Based Systems
   type: journal
-  rank: CCF-C
+  rank: JCR-Q1
   direction: llm-agent-vertical
   links: []
 - id: kbs2025b
@@ -133,7 +143,7 @@
   venue: Knowledge-Based Systems 2025
   venue_full: Knowledge-Based Systems
   type: journal
-  rank: CCF-C
+  rank: JCR-Q1
   direction: llm-agent-vertical
   links: []
 - id: aaai2025
@@ -153,19 +163,8 @@
   venue: J. Traditional and Complementary Medicine 2025
   venue_full: Journal of Traditional and Complementary Medicine (cover paper)
   type: journal
-  rank: ""
+  rank: JCR-Q1
   direction: llm-agent-vertical
-  links: []
-- id: tr2025
-  year: 2025
-  authors: C. Hou, Y. Song, J. Song, C. Chu, X. Fei, J. Li, H. Lv
-  title: "KGC-Explainer: Towards Explainable Knowledge Graph Completion"
-  venue: IEEE Transactions on Reliability
-  venue_full: IEEE Transactions on Reliability
-  type: journal
-  rank: ""
-  direction: llm-agent-vertical
-  status: accepted
   links: []
 - id: tnnls2024
   year: 2024
@@ -174,7 +173,7 @@
   venue: IEEE TNNLS 2024
   venue_full: IEEE Transactions on Neural Networks and Learning Systems
   type: journal
-  rank: CCF-B
+  rank: CCF-B, JCR-Q1
   direction: llm-agent-vertical
   links: []
 - id: iclr2024
@@ -258,7 +257,7 @@
   venue: Methods in Ecology and Evolution 2023
   venue_full: Methods in Ecology and Evolution
   type: journal
-  rank: ""
+  rank: JCR-Q1
   direction: llm-agent-vertical
   links: []
 - id: infocom2022
@@ -278,7 +277,7 @@
   venue: IEEE TKDE 2022
   venue_full: IEEE Transactions on Knowledge and Data Engineering
   type: journal
-  rank: CCF-A
+  rank: CCF-A, JCR-Q1
   direction: llm-agent-vertical
   links:
     - label: Code
@@ -320,6 +319,6 @@
   venue: Neurocomputing 2020
   venue_full: Neurocomputing
   type: journal
-  rank: CCF-C
+  rank: JCR-Q1
   direction: llm-agent-vertical
   links: []
