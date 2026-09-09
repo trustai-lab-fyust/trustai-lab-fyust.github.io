@@ -77,13 +77,13 @@
   direction: llm-agent-vertical
   links: []
 - id: tpami2026
-  year: 2025
+  year: 2026
   authors: W. Mao, C. Hou*, T. Zhang, X. Lin, K. Tang, H. Lv*
   title: "Parse Trees Guided LLM Prompt Compression"
   venue: IEEE TPAMI 2026
   venue_full: IEEE Transactions on Pattern Analysis and Machine Intelligence
   type: journal
-  rank: CCF-A, JCR-Q1, IF=20.4
+  rank: JCR-Q1, CCF-A
   direction: llm-agent-vertical
   links: []
 - id: www2025
@@ -166,16 +166,6 @@
   rank: JCR-Q1
   direction: llm-agent-vertical
   links: []
-- id: tnnls2024
-  year: 2024
-  authors: T. Zhang, C. Hou*, R. Jiang, X. Zhang, C. Zhou, K. Tang, H. Lv*
-  title: "Label Informed Contrastive Pretraining for Node Importance Estimation on Knowledge Graphs"
-  venue: IEEE TNNLS 2024
-  venue_full: IEEE Transactions on Neural Networks and Learning Systems
-  type: journal
-  rank: CCF-B, JCR-Q1
-  direction: llm-agent-vertical
-  links: []
 - id: iclr2024
   year: 2024
   authors: Guangsheng Bao, Yanbin Zhao, Zhiyang Teng, Linyi Yang, Yue Zhang
@@ -190,6 +180,38 @@
       url: https://arxiv.org/abs/2310.05130
     - label: Code
       url: https://github.com/baoguangsheng/fast-detect-gpt
+- id: mm2024
+  year: 2024
+  authors: Hongze Zhu, Guoyang Xie, Chengbin Hou, Tao Dai, Can Gao, Jinbao Wang, Linlin Shen
+  title: "Towards High-resolution 3D Anomaly Detection via Group-Level Feature Contrastive Learning"
+  venue: MM 2024
+  venue_full: 32nd ACM International Conference on Multimedia
+  type: conference
+  rank: CCF-A
+  direction: llm-agent-vertical
+  status: accepted
+  links: []
+- id: bibm2024
+  year: 2024
+  authors: Tianyu Zhang, Yuxiang Ren, Chengbin Hou, Hairong Lv, Xuegong Zhang
+  title: "Molecular Graph Representation Learning Integrating Large Language Models with Domain-specific Small Models"
+  venue: BIBM 2024
+  venue_full: 2024 IEEE International Conference on Bioinformatics and Biomedicine
+  type: conference
+  rank: CCF-B
+  direction: llm-agent-vertical
+  status: accepted
+  links: []
+- id: tnnls2024
+  year: 2024
+  authors: T. Zhang, C. Hou*, R. Jiang, X. Zhang, C. Zhou, K. Tang, H. Lv*
+  title: "Label Informed Contrastive Pretraining for Node Importance Estimation on Knowledge Graphs"
+  venue: IEEE TNNLS 2024
+  venue_full: IEEE Transactions on Neural Networks and Learning Systems
+  type: journal
+  rank: JCR-Q1, CCF-B
+  direction: llm-agent-vertical
+  links: []
 - id: infocom2023
   year: 2023
   authors: Chunmian Wang, Junzhou Luo, Zhen Ling, Lan Luo, Xinwen Fu
@@ -277,11 +299,9 @@
   venue: IEEE TKDE 2022
   venue_full: IEEE Transactions on Knowledge and Data Engineering
   type: journal
-  rank: CCF-A, JCR-Q1
+  rank: JCR-Q1, CCF-A
   direction: llm-agent-vertical
-  links:
-    - label: Code
-      url: https://github.com/houchengbin/GloDyNE
+  links: []
 - id: ijcai2021
   year: 2021
   authors: C. Hou, K. Tang*
@@ -301,6 +321,17 @@
   type: conference
   rank: CCF-A
   direction: trustworthy-llm
+  links: []
+- id: icann2021
+  year: 2021
+  authors: Han Zhang, Chengbin Hou, David W. McDonald, Shan He
+  title: "A Network Embedding Based Approach to Drug-Target Interaction Prediction Using Additional Implicit Networks"
+  venue: ICANN 2021
+  venue_full: 30th International Conference on Artificial Neural Networks
+  type: conference
+  rank: CCF-C
+  direction: llm-agent-vertical
+  status: accepted
   links: []
 - id: aaai2021
   year: 2021
